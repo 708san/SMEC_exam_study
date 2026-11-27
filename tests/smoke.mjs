@@ -18,6 +18,9 @@ assert(l.table.headers.length>1&&l.table.rows.every(r=>r.length===l.table.header
 for(const p of l.prerequisites)assert(p!==id&&topics.some(t=>t.id===p),id+' prerequisite '+p);
 assert(l.takeaway.length>0,id+' summary');
 }
+for(const [id,l] of Object.entries(lessons))for(const source of l.sources??[]){assert(source.url.startsWith('https://'));assert(/^\d{4}-\d{2}-\d{2}$/.test(source.checked));assert(source.name.length>0)}
+const visit=(id,path=[])=>{assert(!path.includes(id),'cyclic prerequisite '+[...path,id].join(' -> '));for(const p of lessons[id]?.prerequisites??[])if(lessons[p])visit(p,[...path,id])};
+for(const id of Object.keys(lessons))visit(id);
 const dom={innerHTML:'',textContent:''}, store=new Map(), events={};
 const context=vm.createContext({document:{querySelector:()=>dom,querySelectorAll:()=>[],addEventListener:(n,fn)=>events[n]=fn},localStorage:{getItem:k=>store.get(k),setItem:(k,v)=>store.set(k,v)},navigator:{},window:{scrollTo(){}},fetch:async p=>({ok:true,json:async()=>p.includes('curriculum')?curriculum:lessons}),alert:()=>{},console});
 await vm.runInContext(read('app.js').replace(/init\(\);\s*$/,'init();'),context);
@@ -70,4 +73,23 @@ assert(dom.innerHTML.includes('前提知識'));
 assert(dom.innerHTML.includes('整理・計算表'));
 assert(dom.innerHTML.includes('安全余裕率'));
 assert(dom.innerHTML.includes('応用'));
+assert.equal(run('cvpValues(40,60).be'),100);
+assert.equal(run('cvpValues(40,60).profit'),40);
+assert.equal(run('marketValues(15).q'),30);
+assert.equal(run('marketValues(15).pc'),35);
+assert.equal(run('marketValues(15).pp'),20);
+assert.equal(run('marketValues(15).loss'),75);
+assert.equal(run('marketValues(15).revenue'),450);
+assert(Math.abs(run('npvValues(10).npv')-4.1322314)<0.0001);
+assert(run('npvValues(25).npv')<0);
+assert(dom.innerHTML.includes('数値を動かして理解する'));
+assert(dom.innerHTML.includes('損益分岐点：100万円'));
+run('selected="fin-standards";page="study";render()');
+assert(dom.innerHTML.includes('参照資料・年度確認'));
+assert(dom.innerHTML.includes('2027年4月1日'));
+assert.equal(run('metrics(subject("fin")).available'),curriculum.subjects.find(s=>s.id==='fin').topics.length);
+run('state=blank()');
+assert.equal(run('metrics(subject("fin")).mastered'),0);
+assert.equal(run('metrics(subject("fin")).latestCorrect'),0);
+assert(run('recommended().every(t=>(lessons[t.id].prerequisites??[]).every(p=>!lessons[p]||state.read[p]?.revision===lessons[p].revision))'));
 console.log('PASS: curriculum, lesson links, question integrity, read revisions, review, unique attempts, retention, backup validation and persistence.');
