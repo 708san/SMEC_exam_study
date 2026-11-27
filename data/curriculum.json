@@ -75,6 +75,124 @@
           "id": "econ-growth",
           "title": "経済成長理論・景気循環"
         }
+      ],
+      "officialGroups": [
+        {
+          "id": "e1",
+          "title": "経済統計",
+          "topics": [
+            "econ-01",
+            "econ-econometrics",
+            "econ-08",
+            "econ-11"
+          ],
+          "gaps": [
+            "各統計の最新データを使う読解演習",
+            "景気動向指数・マネーストックの詳細"
+          ],
+          "status": "初稿対応・細目要監査",
+          "sourcePage": "12"
+        },
+        {
+          "id": "e2",
+          "title": "マクロ理論・政策",
+          "topics": [
+            "econ-07",
+            "econ-08",
+            "econ-09",
+            "econ-10",
+            "econ-growth"
+          ],
+          "gaps": [
+            "IS-LM・AD-ASのグラフ移動と特殊条件の複合問題"
+          ],
+          "status": "初稿対応・細目要監査",
+          "sourcePage": "12"
+        },
+        {
+          "id": "e3",
+          "title": "国際経済",
+          "topics": [
+            "econ-11",
+            "econ-trade"
+          ],
+          "gaps": [
+            "マンデル＝フレミングの数式・グラフ演習",
+            "関税の余剰計算"
+          ],
+          "status": "初稿対応・細目要監査",
+          "sourcePage": "12"
+        },
+        {
+          "id": "e4",
+          "title": "主要学派",
+          "topics": [
+            "econ-growth",
+            "econ-07",
+            "econ-08"
+          ],
+          "gaps": [
+            "期待形成・古典派と新古典派の違いの深掘り"
+          ],
+          "status": "初稿対応・細目要監査",
+          "sourcePage": "12"
+        },
+        {
+          "id": "e5",
+          "title": "市場と資源配分",
+          "topics": [
+            "econ-04",
+            "econ-06",
+            "econ-welfare"
+          ],
+          "gaps": [
+            "補助金・弾力性・価格規制の複合図表問題"
+          ],
+          "status": "初稿対応・細目要監査",
+          "sourcePage": "12"
+        },
+        {
+          "id": "e6",
+          "title": "消費・生産",
+          "topics": [
+            "econ-02",
+            "econ-03"
+          ],
+          "gaps": [
+            "所得効果・代替効果の図解",
+            "等量曲線・費用曲線のグラフ問題"
+          ],
+          "status": "初稿対応・細目要監査",
+          "sourcePage": "12"
+        },
+        {
+          "id": "e7",
+          "title": "組織・戦略の経済学",
+          "topics": [
+            "econ-05",
+            "econ-game",
+            "econ-03"
+          ],
+          "gaps": [
+            "寡占モデルの数値演習",
+            "規模・範囲の経済と価格差別"
+          ],
+          "status": "初稿対応・細目要監査",
+          "sourcePage": "12"
+        },
+        {
+          "id": "e8",
+          "title": "所得分配",
+          "topics": [
+            "econ-distribution",
+            "econ-10"
+          ],
+          "gaps": [
+            "要素市場・所得再分配の図表演習"
+          ],
+          "status": "初稿対応・細目要監査",
+          "sourcePage": "12"
+        }
       ]
     },
     {
@@ -197,6 +315,168 @@
         {
           "id": "fin-productivity",
           "title": "生産性・成長性・キャッシュフロー比率"
+        }
+      ],
+      "officialGroups": [
+        {
+          "id": "f1",
+          "title": "簿記・決算",
+          "topics": [
+            "fin-bookkeeping",
+            "fin-closing",
+            "fin-statements"
+          ],
+          "gaps": [
+            "精算表全体の作成演習",
+            "複数取引を含む決算仕訳"
+          ],
+          "status": "初稿対応・細目要監査",
+          "sourcePage": "12–13"
+        },
+        {
+          "id": "f2",
+          "title": "企業会計・開示",
+          "topics": [
+            "fin-statements",
+            "fin-assets",
+            "fin-standards",
+            "fin-accounting-details",
+            "fin-cashflow",
+            "fin-consolidation",
+            "fin-disclosure"
+          ],
+          "gaps": [
+            "連結の税効果・段階取得",
+            "金融商品・リースの改正詳細",
+            "純資産の詳細仕訳"
+          ],
+          "status": "初稿対応・細目要監査",
+          "sourcePage": "12–13"
+        },
+        {
+          "id": "f3",
+          "title": "税務会計",
+          "topics": [
+            "fin-tax"
+          ],
+          "gaps": [
+            "年度別の実際の税率・税制",
+            "課税所得の詳細調整"
+          ],
+          "status": "初稿対応・細目要監査",
+          "sourcePage": "12–13"
+        },
+        {
+          "id": "f4",
+          "title": "原価計算",
+          "topics": [
+            "fin-cost",
+            "fin-process-costing",
+            "fin-budget"
+          ],
+          "gaps": [
+            "仕損・減損の詳細配分",
+            "部門別・活動基準原価計算"
+          ],
+          "status": "初稿対応・細目要監査",
+          "sourcePage": "12–13"
+        },
+        {
+          "id": "f5",
+          "title": "経営分析",
+          "topics": [
+            "fin-analysis",
+            "fin-cvp",
+            "fin-productivity"
+          ],
+          "gaps": [
+            "実際の財務諸表の総合読解"
+          ],
+          "status": "初稿対応・細目要監査",
+          "sourcePage": "12–13"
+        },
+        {
+          "id": "f6",
+          "title": "利益・資金計画",
+          "topics": [
+            "fin-cvp",
+            "fin-mix",
+            "fin-budget",
+            "fin-working-capital",
+            "fin-cashflow"
+          ],
+          "gaps": [
+            "制約が複数の製品構成・総合資金繰り表"
+          ],
+          "status": "初稿対応・細目要監査",
+          "sourcePage": "12–13"
+        },
+        {
+          "id": "f7",
+          "title": "調達・配当",
+          "topics": [
+            "fin-capital",
+            "fin-dividend",
+            "fin-capital-structure"
+          ],
+          "gaps": [
+            "企業間信用・配当の種類・自己株式の詳細"
+          ],
+          "status": "初稿対応・細目要監査",
+          "sourcePage": "12–13"
+        },
+        {
+          "id": "f8",
+          "title": "実物投資",
+          "topics": [
+            "fin-investment",
+            "fin-irr",
+            "fin-risk-management"
+          ],
+          "gaps": [
+            "異なる耐用年数・不確実性・複数案件の複合計算"
+          ],
+          "status": "初稿対応・細目要監査",
+          "sourcePage": "12–13"
+        },
+        {
+          "id": "f9",
+          "title": "証券投資",
+          "topics": [
+            "fin-portfolio",
+            "fin-capm"
+          ],
+          "gaps": [
+            "効率的フロンティア・最適組合せ・市場モデルの数値演習"
+          ],
+          "status": "初稿対応・細目要監査",
+          "sourcePage": "12–13"
+        },
+        {
+          "id": "f10",
+          "title": "価値評価",
+          "topics": [
+            "fin-valuation",
+            "fin-residual"
+          ],
+          "gaps": [
+            "買収評価・継続価値の複合計算"
+          ],
+          "status": "初稿対応・細目要監査",
+          "sourcePage": "12–13"
+        },
+        {
+          "id": "f11",
+          "title": "金融派生商品・リスク管理",
+          "topics": [
+            "fin-derivatives",
+            "fin-risk-management"
+          ],
+          "gaps": [
+            "オプション損益図・複数契約ヘッジ・金利スワップ計算"
+          ],
+          "status": "初稿対応・細目要監査",
+          "sourcePage": "12–13"
         }
       ]
     },
