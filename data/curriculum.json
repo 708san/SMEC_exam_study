@@ -1,6 +1,6 @@
 {
-  "version": "draft-2026-11-27",
-  "status": "暫定大分類。公式細目・過去問との照合未完了",
+  "version": "draft-2026-11-27-r2",
+  "status": "令和8年度試験案内を基に追加分解した暫定索引。細目・過去問との完全照合は未完了",
   "subjects": [
     {
       "id": "econ",
@@ -50,6 +50,30 @@
         {
           "id": "econ-11",
           "title": "国際経済"
+        },
+        {
+          "id": "econ-econometrics",
+          "title": "経済指標の実質・名目と指数"
+        },
+        {
+          "id": "econ-game",
+          "title": "ゲーム理論・情報の非対称性"
+        },
+        {
+          "id": "econ-distribution",
+          "title": "所得分配・再分配政策"
+        },
+        {
+          "id": "econ-welfare",
+          "title": "余剰分析と厚生経済学"
+        },
+        {
+          "id": "econ-trade",
+          "title": "比較優位・貿易政策・国際収支"
+        },
+        {
+          "id": "econ-growth",
+          "title": "経済成長理論・景気循環"
         }
       ]
     },
@@ -97,6 +121,54 @@
         {
           "id": "fin-valuation",
           "title": "企業価値・リスク"
+        },
+        {
+          "id": "fin-closing",
+          "title": "決算整理・試算表・精算表"
+        },
+        {
+          "id": "fin-assets",
+          "title": "棚卸資産・固定資産・減価償却"
+        },
+        {
+          "id": "fin-tax",
+          "title": "法人税・税効果会計"
+        },
+        {
+          "id": "fin-consolidation",
+          "title": "企業結合・連結会計"
+        },
+        {
+          "id": "fin-budget",
+          "title": "予算管理と標準原価差異"
+        },
+        {
+          "id": "fin-mix",
+          "title": "製品構成・制約資源と意思決定"
+        },
+        {
+          "id": "fin-working-capital",
+          "title": "運転資本と資金繰り"
+        },
+        {
+          "id": "fin-dividend",
+          "title": "資金調達形態・配当政策"
+        },
+        {
+          "id": "fin-capital-structure",
+          "title": "資本構成・財務レバレッジ・MM理論"
+        },
+        {
+          "id": "fin-irr",
+          "title": "内部収益率・回収期間・収益性指数"
+        },
+        {
+          "id": "fin-portfolio",
+          "title": "証券投資・分散投資・ポートフォリオ"
+        },
+        {
+          "id": "fin-capm",
+          "title": "資本資産評価モデル（CAPM）と市場効率性"
         }
       ]
     },
@@ -148,6 +220,54 @@
         {
           "id": "mgmt-11",
           "title": "消費者行動・関係性"
+        },
+        {
+          "id": "mgmt-international",
+          "title": "国際経営戦略・海外進出"
+        },
+        {
+          "id": "mgmt-csr",
+          "title": "企業の社会的責任・企業統治"
+        },
+        {
+          "id": "mgmt-family",
+          "title": "ファミリービジネス・事業承継"
+        },
+        {
+          "id": "mgmt-culture",
+          "title": "組織文化・組織変革"
+        },
+        {
+          "id": "mgmt-learning",
+          "title": "組織学習・知識経営"
+        },
+        {
+          "id": "mgmt-leadership",
+          "title": "リーダーシップ・権力・対立"
+        },
+        {
+          "id": "mgmt-network",
+          "title": "企業間関係・組織間ネットワーク"
+        },
+        {
+          "id": "mgmt-research",
+          "title": "マーケティングリサーチ"
+        },
+        {
+          "id": "mgmt-brand",
+          "title": "ブランド・製品開発"
+        },
+        {
+          "id": "mgmt-pricing",
+          "title": "価格戦略・価格心理"
+        },
+        {
+          "id": "mgmt-communication",
+          "title": "広告・販売促進・広報"
+        },
+        {
+          "id": "mgmt-channel",
+          "title": "流通チャネル・デジタル流通"
         }
       ]
     },
@@ -195,6 +315,54 @@
         {
           "id": "ops-10",
           "title": "店舗情報システム"
+        },
+        {
+          "id": "ops-design",
+          "title": "製品設計・価値分析・環境配慮生産"
+        },
+        {
+          "id": "ops-jit",
+          "title": "ジャストインタイム・かんばん・平準化"
+        },
+        {
+          "id": "ops-forecast",
+          "title": "需要予測・指数平滑"
+        },
+        {
+          "id": "ops-mrp",
+          "title": "資材所要量計画（MRP）・部品表"
+        },
+        {
+          "id": "ops-pert",
+          "title": "工程日程・PERT・ラインバランス"
+        },
+        {
+          "id": "ops-ie",
+          "title": "作業測定・動作研究・標準時間"
+        },
+        {
+          "id": "ops-maintenance",
+          "title": "設備保全・設備総合効率"
+        },
+        {
+          "id": "ops-qc",
+          "title": "管理図・品質管理手法・検査"
+        },
+        {
+          "id": "ops-retail-law",
+          "title": "店舗施設・立地関連法令"
+        },
+        {
+          "id": "ops-merch",
+          "title": "仕入・売場・品揃え・価格政策"
+        },
+        {
+          "id": "ops-logistics",
+          "title": "輸配送・物流センター"
+        },
+        {
+          "id": "ops-codes",
+          "title": "商品コード・電子タグ・追跡管理"
         }
       ]
     },
@@ -238,6 +406,34 @@
         {
           "id": "law-09",
           "title": "倒産・事業承継"
+        },
+        {
+          "id": "law-startup",
+          "title": "個人事業・法人・組合・開業手続"
+        },
+        {
+          "id": "law-insolvency",
+          "title": "民事再生・会社更生・清算"
+        },
+        {
+          "id": "law-international-ip",
+          "title": "知的財産権の国際条約"
+        },
+        {
+          "id": "law-license",
+          "title": "知的財産ライセンス・営業秘密"
+        },
+        {
+          "id": "law-securities",
+          "title": "金融商品取引・資本市場関連制度"
+        },
+        {
+          "id": "law-succession",
+          "title": "相続・事業承継の法務"
+        },
+        {
+          "id": "law-consumer",
+          "title": "消費者保護・取引契約"
         }
       ]
     },
@@ -277,6 +473,30 @@
         {
           "id": "it-08",
           "title": "情報関連法規"
+        },
+        {
+          "id": "it-architecture",
+          "title": "システム構成・仮想化・クラウド"
+        },
+        {
+          "id": "it-performance",
+          "title": "性能・信頼性・経済性評価"
+        },
+        {
+          "id": "it-governance",
+          "title": "情報技術統治・内部統制・監査"
+        },
+        {
+          "id": "it-project",
+          "title": "プロジェクト管理・サービス管理"
+        },
+        {
+          "id": "it-business-systems",
+          "title": "企業内外の業務システム"
+        },
+        {
+          "id": "it-procurement",
+          "title": "システム調達・投資評価"
         }
       ]
     },
@@ -320,6 +540,38 @@
         {
           "id": "sme-09",
           "title": "補助・税制・地域支援"
+        },
+        {
+          "id": "sme-sector",
+          "title": "業種別・規模別経営特質"
+        },
+        {
+          "id": "sme-environment",
+          "title": "経営環境・取引構造・人材"
+        },
+        {
+          "id": "sme-innovation",
+          "title": "経営革新・研究開発・知財活用"
+        },
+        {
+          "id": "sme-international",
+          "title": "海外展開・地域産業集積"
+        },
+        {
+          "id": "sme-policy-history",
+          "title": "中小企業政策の変遷"
+        },
+        {
+          "id": "sme-support",
+          "title": "支援実施体制・相談窓口"
+        },
+        {
+          "id": "sme-transaction",
+          "title": "取引適正化・官公需"
+        },
+        {
+          "id": "sme-regional",
+          "title": "商業・地域・分野別支援"
         }
       ]
     },
@@ -343,6 +595,18 @@
         {
           "id": "case1-04",
           "title": "実戦事例"
+        },
+        {
+          "id": "case1-evidence",
+          "title": "根拠抽出・時系列整理"
+        },
+        {
+          "id": "case1-hr",
+          "title": "採用・評価・育成・権限移譲"
+        },
+        {
+          "id": "case1-succession",
+          "title": "成長段階・承継と組織変革"
         }
       ]
     },
@@ -366,6 +630,18 @@
         {
           "id": "case2-04",
           "title": "実戦事例"
+        },
+        {
+          "id": "case2-target",
+          "title": "顧客層・ニーズ・提供価値"
+        },
+        {
+          "id": "case2-loyalty",
+          "title": "既存顧客・関係性・再来店"
+        },
+        {
+          "id": "case2-channel",
+          "title": "販路・情報発信・地域連携"
         }
       ]
     },
@@ -389,6 +665,18 @@
         {
           "id": "case3-04",
           "title": "実戦事例"
+        },
+        {
+          "id": "case3-flow",
+          "title": "現状工程・流れ・能力分析"
+        },
+        {
+          "id": "case3-quality",
+          "title": "品質・納期・標準化"
+        },
+        {
+          "id": "case3-planning",
+          "title": "生産計画・在庫・情報共有"
         }
       ]
     },
@@ -412,8 +700,25 @@
         {
           "id": "case4-04",
           "title": "実戦事例"
+        },
+        {
+          "id": "case4-cash",
+          "title": "資金繰り・キャッシュフロー"
+        },
+        {
+          "id": "case4-risk",
+          "title": "不確実性・リスク・資本コスト"
+        },
+        {
+          "id": "case4-calculation",
+          "title": "計算手順と検算・記述根拠"
         }
       ]
     }
-  ]
+  ],
+  "source": {
+    "url": "https://www.jf-cmca.jp/attach/test/r08/r08_1ji_annai.pdf",
+    "printedPages": "12–20",
+    "verified": "2026-11-27"
+  }
 }
