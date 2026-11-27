@@ -1,6 +1,6 @@
 {
-  "version": "draft-2026-11-27-r2",
-  "status": "令和8年度試験案内を基に追加分解した暫定索引。細目・過去問との完全照合は未完了",
+  "version": "draft-2026-11-27-r3",
+  "status": "2026年度公式案内の再照合による暫定索引。初稿と全出題細目の品質監査・過去問対応は未完了",
   "subjects": [
     {
       "id": "econ",
@@ -169,6 +169,34 @@
         {
           "id": "fin-capm",
           "title": "資本資産評価モデル（CAPM）と市場効率性"
+        },
+        {
+          "id": "fin-process-costing",
+          "title": "総合原価計算・完成品換算量"
+        },
+        {
+          "id": "fin-derivatives",
+          "title": "オプション・先物・スワップ"
+        },
+        {
+          "id": "fin-risk-management",
+          "title": "不確実性下の投資とリスク管理"
+        },
+        {
+          "id": "fin-residual",
+          "title": "残余利益モデル・株価キャッシュフロー倍率"
+        },
+        {
+          "id": "fin-disclosure",
+          "title": "会計情報開示・会計情報の利用"
+        },
+        {
+          "id": "fin-accounting-details",
+          "title": "金融商品・引当金・減損等の会計"
+        },
+        {
+          "id": "fin-productivity",
+          "title": "生産性・成長性・キャッシュフロー比率"
         }
       ]
     },
