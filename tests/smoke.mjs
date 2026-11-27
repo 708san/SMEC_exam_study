@@ -122,4 +122,15 @@ assert(!dom.innerHTML.includes('<script>bad</script>'));
 assert.throws(()=>run('validate({...blank(),caseHistory:[{caseId:"x",score:101}]})'));
 assert.throws(()=>run('validate({...blank(),examDrafts:{x:{q0:"bad"}}})'));
 assert.equal(run('Object.keys(validate((()=>{const s=blank();delete s.examDrafts;delete s.caseDrafts;delete s.caseHistory;return s})()).caseDrafts).length'),0);
+assert.equal(curriculum.subjects.find(s=>s.id==='econ').officialGroups.length,8);
+assert.equal(curriculum.subjects.find(s=>s.id==='fin').officialGroups.length,11);
+for(const sub of curriculum.subjects)for(const g of sub.officialGroups??[]){assert(g.topics.every(id=>sub.topics.some(t=>t.id===id)));assert(g.gaps.length>0);assert(g.sourcePage)}
+run('state=blank();state.read["fin-cvp"]={date:day(),revision:lessons["fin-cvp"].revision};state.attempts=[{q:"fin-cvp-q1",correct:true,date:plusDays(day(),-5)},{q:"fin-cvp-q1",correct:false,date:day()}]');
+assert.equal(run('learningStatus(topic("fin-cvp"))'),'理解不足');
+run('state.attempts.push({q:"fin-cvp-q1",correct:true,date:day()})');
+assert.equal(run('spacedRetention(questions.find(q=>q.id==="fin-cvp-q1"))'),false);
+run('page="study";selected="fin";render()');
+assert(dom.innerHTML.includes('公式出題項目との対応'));
+assert(dom.innerHTML.includes('金融派生商品・リスク管理'));
+assert(dom.innerHTML.includes('不足・要検証'));
 console.log('PASS: curriculum, lesson links, question integrity, read revisions, review, unique attempts, retention, backup validation and persistence.');
