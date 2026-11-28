@@ -24,6 +24,18 @@ try{
  await page.locator('details[open]').getByRole('heading',{name:'細目別チェックリスト'}).waitFor();
  await page.locator('button[data-topic="econ-trade"]').last().click();
  await page.locator('[data-diagram="econ-trade"]').getByText(/関税収入 400、死荷重 100/).waitFor();
+ await page.locator('button[data-subject="econ"]').click();
+ await page.locator('button[data-topic="econ-09"]').last().click();
+ const worked=page.locator('[data-example="econ-09-ex1"]');
+ await worked.waitFor();
+ assert.equal(await worked.locator('details').evaluate(el=>el.open),false);
+ assert.equal(await worked.locator('.example-answer').isVisible(),false);
+ await worked.locator('summary').click();
+ await worked.locator('.example-answer').waitFor();
+ assert.equal(await worked.locator('.example-steps li').count(),5);
+ assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+2),true,'worked example mobile overflow');
+ await page.locator('button[data-subject="econ"]').click();
+ await page.locator('button[data-topic="econ-trade"]').last().click();
  await page.locator('[data-diagram="econ-trade"] input[data-param="0"]').fill('30');
  await page.locator('[data-diagram="econ-trade"]').getByText(/関税収入 0、死荷重 900/).waitFor();
  assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+2),true,'tariff graph mobile overflow');
