@@ -2,7 +2,7 @@ import {readFileSync} from 'node:fs';
 import assert from 'node:assert/strict';
 import vm from 'node:vm';
 const read=p=>readFileSync(new URL('../'+p,import.meta.url),'utf8');
-const curriculum=JSON.parse(read('data/curriculum.json')), baseLessons=JSON.parse(read('data/lessons.json')), smeLessons=JSON.parse(read('data/lessons-sme.json')), lessons={...baseLessons,...smeLessons};
+const curriculum=JSON.parse(read('data/curriculum.json')), baseLessons=JSON.parse(read('data/lessons.json')), smeLessons=JSON.parse(read('data/lessons-sme.json')), secondLessons=JSON.parse(read('data/lessons-second.json')), lessons={...baseLessons,...smeLessons,...secondLessons};
 assert(!Object.keys(smeLessons).some(id=>Object.hasOwn(baseLessons,id)),'duplicate split lesson ID');
 const cases=JSON.parse(read('data/cases.json'));
 const topics=curriculum.subjects.flatMap(s=>s.topics), questions=Object.values(lessons).flatMap(l=>l.questions);
@@ -27,7 +27,7 @@ assert.equal(cases.length,4);
 assert.equal(new Set(cases.map(c=>c.subject)).size,4);
 for(const c of cases){assert(curriculum.subjects.some(s=>s.id===c.subject&&s.stage===2));assert.equal(c.questions.reduce((n,q)=>n+q.points,0),100);for(const q of c.questions){assert(Array.from(q.model).length<=q.limit);assert.equal(q.rubric.reduce((n,r)=>n+r[1],0),q.points);assert(q.topics.every(id=>topics.some(t=>t.id===id)))}}
 const dom={innerHTML:'',textContent:''}, store=new Map(), events={};
-const context=vm.createContext({document:{querySelector:()=>dom,querySelectorAll:()=>[],addEventListener:(n,fn)=>events[n]=fn},localStorage:{getItem:k=>store.get(k),setItem:(k,v)=>store.set(k,v)},navigator:{},window:{scrollTo(){}},fetch:async p=>({ok:true,json:async()=>p.includes('curriculum')?curriculum:p.includes('cases')?cases:p.includes('lessons-sme')?smeLessons:baseLessons}),alert:()=>{},console});
+const context=vm.createContext({document:{querySelector:()=>dom,querySelectorAll:()=>[],addEventListener:(n,fn)=>events[n]=fn},localStorage:{getItem:k=>store.get(k),setItem:(k,v)=>store.set(k,v)},navigator:{},window:{scrollTo(){}},fetch:async p=>({ok:true,json:async()=>p.includes('curriculum')?curriculum:p.includes('cases')?cases:p.includes('lessons-sme')?smeLessons:p.includes('lessons-second')?secondLessons:baseLessons}),alert:()=>{},console});
 await vm.runInContext(read('app.js').replace(/init\(\);\s*$/,'init();'),context);
 const run=s=>vm.runInContext(s,context);
 assert(dom.innerHTML.includes('学習ダッシュボード'));
@@ -227,3 +227,8 @@ assert.equal(run('metrics(subject("sme")).available'),17);
 run('selected="sme-01";render()');
 assert(dom.innerHTML.includes('参照資料・年度確認'));
 console.log('PASS: all primary subject draft topics, SME sources, scope and split data integration');
+
+assert(!Object.keys(secondLessons).some(id=>Object.hasOwn(baseLessons,id)||Object.hasOwn(smeLessons,id)));
+for(const sub of curriculum.subjects.filter(s=>['case1','case2'].includes(s.id))){assert(sub.topics.every(t=>lessons[t.id]));const qs=sub.topics.flatMap(t=>lessons[t.id].questions);for(const i of [0,1,2,3])assert.equal(qs.filter(q=>q.answer===i).length,7);for(const t of sub.topics){const l=lessons[t.id];assert(l.writtenDrill.prompt&&l.writtenDrill.model&&l.writtenDrill.review);assert(l.sources.length>=3);for(const q of l.questions)assert.equal(new Set(q.options).size,4);run('state=blank();page="study";selected='+JSON.stringify(t.id)+';render()');assert(dom.innerHTML.includes('記述ミニ演習'));assert(dom.innerHTML.includes('解答例と見直し観点'))}}
+assert.equal(Object.keys(secondLessons).length,14);
+console.log('PASS: case I/II curriculum and writing drills');
