@@ -1,6 +1,6 @@
 {
-  "version": "draft-2026-11-28-r6",
-  "status": "2026年度公式案内に基づく暫定索引。経済・財務・企業経営理論・運営管理・経営法務は項目群の対応付けを実施。全細目・過年度問題・独立内容監査は未完了。",
+  "version": "draft-2026-11-28-r7",
+  "status": "2026年度公式案内に基づく暫定索引。一次の経済・財務・企業経営理論・運営管理・経営法務・経営情報システムは項目群の対応付けを実施。全細目・過年度問題・独立内容監査は未完了。",
   "subjects": [
     {
       "id": "econ",
@@ -1435,6 +1435,193 @@
         {
           "id": "it-procurement",
           "title": "システム調達・投資評価"
+        },
+        {
+          "id": "it-algorithm",
+          "title": "アルゴリズム・データ構造・プログラム設計"
+        },
+        {
+          "id": "it-statistics",
+          "title": "確率・統計・問題分析と意思決定"
+        }
+      ],
+      "officialGroups": [
+        {
+          "id": "i1",
+          "title": "情報処理の基礎技術",
+          "topics": [
+            "it-01",
+            "it-algorithm",
+            "it-05"
+          ],
+          "gaps": [
+            "論理演算・文字コード・数値表現の詳細",
+            "探索・整列・フローチャートの長文演習",
+            "ソフトウェアの設計手法の詳細"
+          ],
+          "sourcePage": "18",
+          "status": "初稿対応・細目要監査"
+        },
+        {
+          "id": "i2",
+          "title": "情報処理システムと関連技術",
+          "topics": [
+            "it-architecture",
+            "it-01",
+            "it-business-systems"
+          ],
+          "gaps": [
+            "仮想化・外部資源・マルチメディアの細目",
+            "アクセシビリティ規格・Web設計の詳細"
+          ],
+          "sourcePage": "18",
+          "status": "初稿対応・細目要監査"
+        },
+        {
+          "id": "i3",
+          "title": "データベース",
+          "topics": [
+            "it-03",
+            "it-business-systems"
+          ],
+          "gaps": [
+            "SQLの複合照会・正規化の演習",
+            "排他制御・障害回復の詳細"
+          ],
+          "sourcePage": "18",
+          "status": "初稿対応・細目要監査"
+        },
+        {
+          "id": "i4",
+          "title": "通信ネットワーク",
+          "topics": [
+            "it-02",
+            "it-04"
+          ],
+          "gaps": [
+            "サブネット計算・無線規格・通信技術の詳細",
+            "プロトコル・通信機器の複合問題"
+          ],
+          "sourcePage": "18",
+          "status": "初稿対応・細目要監査"
+        },
+        {
+          "id": "i5",
+          "title": "システム評価",
+          "topics": [
+            "it-performance",
+            "it-procurement"
+          ],
+          "gaps": [
+            "待ち行列・複合冗長化・品質評価の詳細"
+          ],
+          "sourcePage": "18",
+          "status": "初稿対応・細目要監査"
+        },
+        {
+          "id": "i6",
+          "title": "その他情報通信技術",
+          "topics": [
+            "it-01",
+            "it-02",
+            "it-07"
+          ],
+          "gaps": [
+            "新技術・過年度出題の追加照合"
+          ],
+          "sourcePage": "18",
+          "status": "初稿対応・細目要監査"
+        },
+        {
+          "id": "i7",
+          "title": "経営戦略と情報システム",
+          "topics": [
+            "it-06",
+            "it-business-systems",
+            "it-governance",
+            "it-procurement",
+            "it-07"
+          ],
+          "gaps": [
+            "情報戦略策定の方法論と標準化の詳細",
+            "企業・社会のデジタル化の事例比較",
+            "業務システムの統合演習"
+          ],
+          "sourcePage": "18",
+          "status": "初稿対応・細目要監査"
+        },
+        {
+          "id": "i8",
+          "title": "情報システム開発",
+          "topics": [
+            "it-05",
+            "it-algorithm",
+            "it-procurement"
+          ],
+          "gaps": [
+            "設計図・見積り・開発技法の複合問題"
+          ],
+          "sourcePage": "19",
+          "status": "初稿対応・細目要監査"
+        },
+        {
+          "id": "i9",
+          "title": "情報システムのマネジメント",
+          "topics": [
+            "it-project",
+            "it-governance",
+            "it-04",
+            "it-08"
+          ],
+          "gaps": [
+            "情報セキュリティ管理規格・リスク対応の詳細",
+            "プロジェクト・サービス管理のケース演習"
+          ],
+          "sourcePage": "19",
+          "status": "初稿対応・細目要監査"
+        },
+        {
+          "id": "i10",
+          "title": "情報システムの評価",
+          "topics": [
+            "it-performance",
+            "it-procurement",
+            "it-governance"
+          ],
+          "gaps": [
+            "品質モデルの版と詳細、定量的価値評価"
+          ],
+          "sourcePage": "19",
+          "status": "初稿対応・細目要監査"
+        },
+        {
+          "id": "i11",
+          "title": "意思決定支援",
+          "topics": [
+            "it-statistics",
+            "it-07",
+            "it-business-systems"
+          ],
+          "gaps": [
+            "確率分布・統計検定・多変量解析の詳細演習",
+            "データ収集・可視化・モデル評価の複合問題"
+          ],
+          "sourcePage": "19",
+          "status": "初稿対応・細目要監査"
+        },
+        {
+          "id": "i12",
+          "title": "その他経営情報管理",
+          "topics": [
+            "it-08",
+            "it-07",
+            "it-governance"
+          ],
+          "gaps": [
+            "最新の情報法令・規格・新規出題論点の確認"
+          ],
+          "sourcePage": "19",
+          "status": "初稿対応・細目要監査"
         }
       ]
     },
