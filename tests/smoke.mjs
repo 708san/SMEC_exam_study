@@ -201,7 +201,7 @@ assert.equal(itSubject.officialGroups.length,12);
 assert.equal(itSubject.topics.length,16);
 assert(itSubject.topics.every(t=>lessons[t.id]),'missing IT lesson');
 const itQs=itSubject.topics.flatMap(t=>lessons[t.id].questions);
-assert.equal(itQs.length,116);
+assert.equal(itQs.length,128);
 const itPositions=[0,1,2,3].map(i=>itQs.filter(q=>q.answer===i).length);
 assert(Math.max(...itPositions)-Math.min(...itPositions)<=1,'IT answer position bias');
 for(const t of itSubject.topics){const l=lessons[t.id];assert(l.sections.length>=8,t.id+' depth');assert(l.questions.length>=6,t.id+' exercises');for(const q of l.questions){assert.equal(new Set(q.options).size,q.options.length,q.id+' duplicate options');assert(q.explanations.every(e=>e.trim()),q.id+' missing rationale')}}
@@ -219,8 +219,8 @@ assert.equal(sme.officialGroups.length,5);
 assert(sme.topics.every(t=>lessons[t.id]));
 assert(curriculum.subjects.filter(s=>s.stage===1).every(s=>s.topics.every(t=>lessons[t.id])));
 const smeQs=sme.topics.flatMap(t=>lessons[t.id].questions);
-assert.equal(smeQs.length,84);
-for(const i of [0,1,2,3])assert.equal(smeQs.filter(q=>q.answer===i).length,21);
+assert.equal(smeQs.length,92);
+for(const i of [0,1,2,3])assert.equal(smeQs.filter(q=>q.answer===i).length,23);
 assert(new Set(sme.topics.map(t=>lessons[t.id].questions.slice(0,4).map(q=>q.answer).join(','))).size>=8,'predictable correct positions');
 for(const t of sme.topics){const l=lessons[t.id];assert(l.sections.length>=8);assert(l.sources.length>=1);assert(l.questions.length>=4);for(const q of l.questions){assert.equal(new Set(q.options).size,4);assert(q.explanations.every(e=>e.trim()))}}
 run('state=blank();page="study";selected="sme";render()');
@@ -234,8 +234,8 @@ assert(!Object.keys(secondLessons).some(id=>Object.hasOwn(baseLessons,id)||Objec
 for(const sub of curriculum.subjects.filter(s=>s.stage===2)){assert(sub.topics.every(t=>lessons[t.id]));const qs=sub.topics.flatMap(t=>lessons[t.id].questions);for(const i of [0,1,2,3])assert.equal(qs.filter(q=>q.answer===i).length,7);for(const t of sub.topics){const l=lessons[t.id];assert(l.writtenDrill.prompt&&l.writtenDrill.model&&l.writtenDrill.review);assert(l.sources.length>=3);for(const q of l.questions)assert.equal(new Set(q.options).size,4);run('state=blank();page="study";selected='+JSON.stringify(t.id)+';render()');assert(dom.innerHTML.includes('記述ミニ演習'));assert(dom.innerHTML.includes('解答例と見直し観点'))}}
 assert.equal(Object.keys(secondLessons).length,28);
 assert(topics.every(t=>lessons[t.id]));
-assert.equal(questions.length,995);
-assert.equal(Object.values(lessons).reduce((n,l)=>n+l.sections.length,0),1377);
+assert.equal(questions.length,1023);
+assert.equal(Object.values(lessons).reduce((n,l)=>n+l.sections.length,0),1405);
 assert(Math.abs(-200+[1,2,3].reduce((s,t)=>s+80/1.05**t,0)-17.86)<0.01);
 assert(Math.abs(-200+[1,2,3].reduce((s,t)=>s+65/1.05**t,0)+22.99)<0.01);
 console.log('PASS: case I–IV curriculum and writing drills');
@@ -271,3 +271,5 @@ assert.equal(1000+130-50,1080);assert.equal(120-1080*.1,12);assert.equal((100*(1
 run('state=blank();page="study";selected="econ";render()');assert(dom.innerHTML.includes('点検・増補した節'));console.log('PASS: partial depth evidence and calculation checks');
 
 assert.equal(4*25/25,4);assert.equal((.9**20*100).toFixed(1),'12.2');assert.equal(30*5+10*25,400);assert.equal((1200000-600000)/(3500-2000),400);assert.equal(21/(3*8),.875);console.log('PASS: management and operations examples');
+
+assert.equal(partialAudit.length,73);assert.equal(8000*.5*.25,1000);assert.equal(35/(80-10),.5);assert(Math.abs(1/(1-.8)-1-4)<1e-9);assert.equal(1/(.2+.8/4),2.5);assert.equal(100+200-80,220);assert.equal(1000*.8,800);assert.equal(Math.min(300*10,2000),2000);assert.equal((162-150)/(120-100),.6);assert(Math.abs(120/(1-1/3)-180)<1e-9);console.log('PASS: legal boundaries, IT worked examples, SME policy examples');
