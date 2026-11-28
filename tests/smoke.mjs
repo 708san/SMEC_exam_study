@@ -124,6 +124,24 @@ assert.throws(()=>run('validate({...blank(),examDrafts:{x:{q0:"bad"}}})'));
 assert.equal(run('Object.keys(validate((()=>{const s=blank();delete s.examDrafts;delete s.caseDrafts;delete s.caseHistory;return s})()).caseDrafts).length'),0);
 assert.equal(curriculum.subjects.find(s=>s.id==='econ').officialGroups.length,8);
 assert.equal(curriculum.subjects.find(s=>s.id==='fin').officialGroups.length,11);
+assert.equal(curriculum.subjects.find(s=>s.id==='mgmt').officialGroups.length,26);
+const mgmtTopics=curriculum.subjects.find(s=>s.id==='mgmt').topics;
+assert(mgmtTopics.every(t=>lessons[t.id]),'management topic missing lesson');
+const mgmtQs=mgmtTopics.flatMap(t=>lessons[t.id].questions);
+const positions=[0,1,2,3].map(i=>mgmtQs.filter(q=>q.answer===i).length);
+assert(Math.max(...positions)-Math.min(...positions)<=1,'management answers biased');
+for(const t of mgmtTopics){const l=lessons[t.id];assert(l.sections.reduce((n,[h,p])=>n+p.length,0)>=600,t.id+' explanation depth floor');for(const q of l.questions){assert.equal(new Set(q.options).size,q.options.length,t.id+' duplicate option');assert(q.explanations.every(x=>typeof x==='string'&&x.trim().length>0),q.id+' empty rationale')}}
+for(const id of ['mgmt-08','mgmt-labor-employment','mgmt-labor-care','mgmt-labor-safety'])assert(lessons[id].sources.length>=3,id+' primary sources');
+for(const id of ['mgmt-learning','mgmt-03','mgmt-international','mgmt-11']){
+ run('page="study";selected='+JSON.stringify(id)+';render()');
+ assert(dom.innerHTML.includes('data-concept="'+id+'"'),id+' concept diagram missing')
+}
+run('page="study";selected="mgmt-pricing";render()');
+assert(dom.innerHTML.includes('1,334個'));
+assert(dom.innerHTML.includes('100,000円'));
+assert(run('diagramContent("mgmt-pricing",0,1000)').includes('1,000個'));
+assert(run('diagramContent("mgmt-pricing",200,2000)').includes('2,000個'));
+
 for(const sub of curriculum.subjects)for(const g of sub.officialGroups??[]){assert(g.topics.every(id=>sub.topics.some(t=>t.id===id)));assert(g.gaps.length>0);assert(g.sourcePage)}
 run('state=blank();state.read["fin-cvp"]={date:day(),revision:lessons["fin-cvp"].revision};state.attempts=[{q:"fin-cvp-q1",correct:true,date:plusDays(day(),-5)},{q:"fin-cvp-q1",correct:false,date:day()}]');
 assert.equal(run('learningStatus(topic("fin-cvp"))'),'理解不足');
