@@ -94,6 +94,16 @@ try{
  await page.locator('[data-diagram="it-07"] input[data-param="1"]').fill('0');
  await page.locator('[data-diagram="it-07"]').getByText('未定義',{exact:true}).waitFor();
  assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+2),true,'IT diagrams mobile overflow');
+ await page.locator('nav [data-page="study"]').click();
+ await page.locator('[data-subject="sme"]').click();
+ await page.getByRole('heading',{name:'公式出題項目との対応'}).waitFor();
+ await page.locator('button[data-topic="sme-01"]').last().click();
+ await page.getByRole('heading',{name:'参照資料・年度確認'}).waitFor();
+ await page.locator('[data-read="sme-01"]').click();
+ await page.locator('[data-question="sme-01-q1"][data-option="3"]').click();
+ assert.equal((await readState()).attempts.at(-1).correct,true);
+ assert((await readState()).read['sme-01']);
+ assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+2),true,'SME mobile overflow');
  await page.locator('nav [data-page="scores"]').click();
  await page.locator('#exam-select').selectOption('2026-mgmt');
  await page.locator('#officialform [name="q0"]').selectOption('ア');
@@ -123,6 +133,11 @@ try{
  await page.waitForFunction(()=>!!navigator.serviceWorker.controller);
  await context.setOffline(true);await page.reload();await page.getByRole('heading',{name:'学習ダッシュボード'}).waitFor();
  assert.equal((await readState()).caseHistory.at(-1).score,8);
+ assert((await readState()).read['sme-01']);
+ await page.locator('nav [data-page="study"]').click();
+ await page.locator('[data-subject="sme"]').click();
+ await page.locator('button[data-topic="sme-08"]').last().click();
+ await page.getByRole('heading',{name:'二つの共済制度の違い'}).waitFor();
  await page.locator('nav [data-page="cases"]').click();await page.locator('[data-case="case4-mini-01"]').click();
  await page.getByRole('heading',{name:'設備投資と利益計画の統合演習'}).waitFor();
  assert.deepEqual(errors,[]);

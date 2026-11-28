@@ -217,8 +217,9 @@ assert.equal(sme.officialGroups.length,5);
 assert(sme.topics.every(t=>lessons[t.id]));
 assert(curriculum.subjects.filter(s=>s.stage===1).every(s=>s.topics.every(t=>lessons[t.id])));
 const smeQs=sme.topics.flatMap(t=>lessons[t.id].questions);
-assert.equal(smeQs.length,68);
-for(const i of [0,1,2,3])assert.equal(smeQs.filter(q=>q.answer===i).length,17);
+assert.equal(smeQs.length,76);
+for(const i of [0,1,2,3])assert.equal(smeQs.filter(q=>q.answer===i).length,19);
+assert(new Set(sme.topics.map(t=>lessons[t.id].questions.slice(0,4).map(q=>q.answer).join(','))).size>=8,'predictable correct positions');
 for(const t of sme.topics){const l=lessons[t.id];assert(l.sections.length>=8);assert(l.sources.length>=1);assert(l.questions.length>=4);for(const q of l.questions){assert.equal(new Set(q.options).size,4);assert(q.explanations.every(e=>e.trim()))}}
 run('state=blank();page="study";selected="sme";render()');
 assert(dom.innerHTML.includes('公式出題項目との対応'));
