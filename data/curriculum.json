@@ -1,5 +1,5 @@
 {
-  "version": "draft-2026-11-28-r11",
+  "version": "draft-2026-11-28-r12",
   "status": "2026年度公式案内に基づく暫定索引。一次の経済・財務・企業経営理論・運営管理・経営法務・経営情報システムは項目群の対応付けを実施。全細目・過年度問題・独立内容監査は未完了。",
   "subjects": [
     {
@@ -108,6 +108,54 @@
               ],
               "status": "増補済み・独立監査待ち"
             }
+          ],
+          "auditItems": [
+            {
+              "id": "e1-1",
+              "title": "国民経済計算・国民所得",
+              "topics": [
+                "econ-01"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "e1-2",
+              "title": "雇用と物価指数",
+              "topics": [
+                "econ-econometrics"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "e1-3",
+              "title": "景気指数",
+              "topics": [
+                "econ-econometrics"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "e1-4",
+              "title": "通貨統計",
+              "topics": [
+                "econ-08"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "e1-5",
+              "title": "国際収支・為替",
+              "topics": [
+                "econ-11"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "e1-6",
+              "title": "国内外経済の現状・年度データ",
+              "topics": [],
+              "status": "対応先要特定"
+            }
           ]
         },
         {
@@ -132,6 +180,64 @@
                 "AD-ASをIS-LMからつなぐ"
               ],
               "status": "増補済み・独立監査待ち"
+            }
+          ],
+          "auditItems": [
+            {
+              "id": "e2-1",
+              "title": "財市場と国民所得・乗数",
+              "topics": [
+                "econ-07"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "e2-2",
+              "title": "貨幣市場・金利・貨幣数量",
+              "topics": [
+                "econ-08"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "e2-3",
+              "title": "IS-LMの連立・政策",
+              "topics": [
+                "econ-09"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "e2-4",
+              "title": "財政支出・租税と乗数",
+              "topics": [
+                "econ-07"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "e2-5",
+              "title": "金融政策",
+              "topics": [
+                "econ-08"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "e2-6",
+              "title": "雇用・物価・AD-AS",
+              "topics": [
+                "econ-10"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "e2-7",
+              "title": "景気循環と成長",
+              "topics": [
+                "econ-growth"
+              ],
+              "status": "対応候補・本文要照合"
             }
           ]
         },
@@ -163,6 +269,40 @@
               ],
               "status": "増補済み・独立監査待ち"
             }
+          ],
+          "auditItems": [
+            {
+              "id": "e3-1",
+              "title": "比較優位・貿易モデル",
+              "topics": [
+                "econ-trade"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "e3-2",
+              "title": "関税・数量制限",
+              "topics": [
+                "econ-trade"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "e3-3",
+              "title": "国際収支・為替",
+              "topics": [
+                "econ-11"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "e3-4",
+              "title": "小国開放経済の政策",
+              "topics": [
+                "econ-11"
+              ],
+              "status": "対応候補・本文要照合"
+            }
           ]
         },
         {
@@ -187,6 +327,41 @@
               ],
               "status": "増補済み・独立監査待ち"
             }
+          ],
+          "auditItems": [
+            {
+              "id": "e4-1",
+              "title": "ケインズ型分析",
+              "topics": [
+                "econ-07"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "e4-2",
+              "title": "古典派・新古典派",
+              "topics": [
+                "econ-growth"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "e4-3",
+              "title": "マネタリズム・貨幣",
+              "topics": [
+                "econ-growth",
+                "econ-08"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "e4-4",
+              "title": "期待形成",
+              "topics": [
+                "econ-growth"
+              ],
+              "status": "対応候補・本文要照合"
+            }
           ]
         },
         {
@@ -201,7 +376,51 @@
             "補助金・弾力性・価格規制の複合図表問題"
           ],
           "status": "初稿対応・細目要監査",
-          "sourcePage": "12"
+          "sourcePage": "12",
+          "auditItems": [
+            {
+              "id": "e5-1",
+              "title": "市場の均衡・不均衡",
+              "topics": [
+                "econ-04"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "e5-2",
+              "title": "価格・所得弾力性",
+              "topics": [
+                "econ-04",
+                "econ-02"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "e5-3",
+              "title": "余剰と資源配分",
+              "topics": [
+                "econ-welfare"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "e5-4",
+              "title": "外部性・公共財・情報の非対称",
+              "topics": [
+                "econ-06"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "e5-5",
+              "title": "税・補助・価格規制",
+              "topics": [
+                "econ-welfare",
+                "econ-04"
+              ],
+              "status": "対応候補・本文要照合"
+            }
+          ]
         },
         {
           "id": "e6",
@@ -233,6 +452,48 @@
               ],
               "status": "増補済み・独立監査待ち"
             }
+          ],
+          "auditItems": [
+            {
+              "id": "e6-1",
+              "title": "効用・無差別曲線",
+              "topics": [
+                "econ-02"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "e6-2",
+              "title": "予算線・消費選択・需要",
+              "topics": [
+                "econ-02"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "e6-3",
+              "title": "代替効果・所得効果",
+              "topics": [
+                "econ-02"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "e6-4",
+              "title": "生産関数と投入選択",
+              "topics": [
+                "econ-03"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "e6-5",
+              "title": "費用曲線・利潤最大化・供給",
+              "topics": [
+                "econ-03"
+              ],
+              "status": "対応候補・本文要照合"
+            }
           ]
         },
         {
@@ -258,6 +519,42 @@
               ],
               "status": "増補済み・独立監査待ち"
             }
+          ],
+          "auditItems": [
+            {
+              "id": "e7-1",
+              "title": "不完全情報とゲーム",
+              "topics": [
+                "econ-game"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "e7-2",
+              "title": "独占の弊害・寡占・協調",
+              "topics": [
+                "econ-05",
+                "econ-game"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "e7-3",
+              "title": "製品差別化と独占的競争",
+              "topics": [
+                "econ-05"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "e7-4",
+              "title": "規模と範囲の経済",
+              "topics": [
+                "econ-03",
+                "econ-05"
+              ],
+              "status": "対応候補・本文要照合"
+            }
           ]
         },
         {
@@ -280,6 +577,34 @@
               ],
               "status": "増補済み・独立監査待ち"
             }
+          ],
+          "auditItems": [
+            {
+              "id": "e8-1",
+              "title": "効率・公平・公正",
+              "topics": [
+                "econ-distribution",
+                "econ-welfare"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "e8-2",
+              "title": "生産要素・要素報酬",
+              "topics": [
+                "econ-distribution",
+                "econ-10"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "e8-3",
+              "title": "所得分布・再分配・税補助",
+              "topics": [
+                "econ-distribution"
+              ],
+              "status": "対応候補・本文要照合"
+            }
           ]
         },
         {
@@ -290,7 +615,9 @@
             "公式のその他項目は範囲が閉じていない。過去問・新規分野・年度改訂から未収録論点を継続抽出する。"
           ],
           "status": "開放範囲・網羅性判定不可",
-          "sourcePage": "12"
+          "sourcePage": "12",
+          "openScope": true,
+          "auditItems": []
         }
       ]
     },
@@ -439,6 +766,34 @@
               ],
               "status": "増補済み・独立監査待ち"
             }
+          ],
+          "auditItems": [
+            {
+              "id": "f1-1",
+              "title": "複式簿記・勘定・仕訳",
+              "topics": [
+                "fin-bookkeeping"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "f1-2",
+              "title": "帳簿・試算表・精算表",
+              "topics": [
+                "fin-bookkeeping",
+                "fin-closing"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "f1-3",
+              "title": "決算整理・財務諸表",
+              "topics": [
+                "fin-closing",
+                "fin-statements"
+              ],
+              "status": "対応候補・本文要照合"
+            }
           ]
         },
         {
@@ -459,7 +814,69 @@
             "純資産の詳細仕訳"
           ],
           "status": "初稿対応・細目要監査",
-          "sourcePage": "12–13"
+          "sourcePage": "12–13",
+          "auditItems": [
+            {
+              "id": "f2-1",
+              "title": "収益・費用認識",
+              "topics": [
+                "fin-statements",
+                "fin-standards"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "f2-2",
+              "title": "資産測定・棚卸・固定資産",
+              "topics": [
+                "fin-assets",
+                "fin-accounting-details"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "f2-3",
+              "title": "負債・引当・リース",
+              "topics": [
+                "fin-accounting-details",
+                "fin-standards"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "f2-4",
+              "title": "純資産・自己株式",
+              "topics": [
+                "fin-statements",
+                "fin-dividend"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "f2-5",
+              "title": "キャッシュフロー計算",
+              "topics": [
+                "fin-cashflow"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "f2-6",
+              "title": "企業結合・分割・連結",
+              "topics": [
+                "fin-consolidation"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "f2-7",
+              "title": "開示",
+              "topics": [
+                "fin-disclosure"
+              ],
+              "status": "対応候補・本文要照合"
+            }
+          ]
         },
         {
           "id": "f3",
@@ -472,7 +889,31 @@
             "課税所得の詳細調整"
           ],
           "status": "初稿対応・細目要監査",
-          "sourcePage": "12–13"
+          "sourcePage": "12–13",
+          "auditItems": [
+            {
+              "id": "f3-1",
+              "title": "益金・損金・所得調整",
+              "topics": [
+                "fin-tax"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "f3-2",
+              "title": "課税所得・税額",
+              "topics": [
+                "fin-tax"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "f3-3",
+              "title": "年度別税率・個別税制",
+              "topics": [],
+              "status": "対応先要特定"
+            }
+          ]
         },
         {
           "id": "f4",
@@ -497,6 +938,50 @@
               ],
               "status": "増補済み・独立監査待ち"
             }
+          ],
+          "auditItems": [
+            {
+              "id": "f4-1",
+              "title": "原価概念と分類",
+              "topics": [
+                "fin-cost"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "f4-2",
+              "title": "個別・総合原価",
+              "topics": [
+                "fin-cost",
+                "fin-process-costing"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "f4-3",
+              "title": "部門配賦・活動基準",
+              "topics": [
+                "fin-cost"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "f4-4",
+              "title": "標準原価と差異分析",
+              "topics": [
+                "fin-budget"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "f4-5",
+              "title": "原価情報と意思決定",
+              "topics": [
+                "fin-cvp",
+                "fin-mix"
+              ],
+              "status": "対応候補・本文要照合"
+            }
           ]
         },
         {
@@ -511,7 +996,33 @@
             "実際の財務諸表の総合読解"
           ],
           "status": "初稿対応・細目要監査",
-          "sourcePage": "12–13"
+          "sourcePage": "12–13",
+          "auditItems": [
+            {
+              "id": "f5-1",
+              "title": "収益性・安全性・効率性",
+              "topics": [
+                "fin-analysis"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "f5-2",
+              "title": "生産性・成長性",
+              "topics": [
+                "fin-productivity"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "f5-3",
+              "title": "CVP・損益分岐",
+              "topics": [
+                "fin-cvp"
+              ],
+              "status": "対応候補・本文要照合"
+            }
+          ]
         },
         {
           "id": "f6",
@@ -527,7 +1038,44 @@
             "制約が複数の製品構成・総合資金繰り表"
           ],
           "status": "初稿対応・細目要監査",
-          "sourcePage": "12–13"
+          "sourcePage": "12–13",
+          "auditItems": [
+            {
+              "id": "f6-1",
+              "title": "限界利益・貢献利益・製品構成",
+              "topics": [
+                "fin-cvp",
+                "fin-mix"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "f6-2",
+              "title": "予算・実績差異",
+              "topics": [
+                "fin-budget"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "f6-3",
+              "title": "資金繰り",
+              "topics": [
+                "fin-working-capital"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "f6-4",
+              "title": "FCF・運転資本・CF比率",
+              "topics": [
+                "fin-cashflow",
+                "fin-working-capital",
+                "fin-productivity"
+              ],
+              "status": "対応候補・本文要照合"
+            }
+          ]
         },
         {
           "id": "f7",
@@ -551,6 +1099,49 @@
               ],
               "status": "増補済み・独立監査待ち"
             }
+          ],
+          "auditItems": [
+            {
+              "id": "f7-1",
+              "title": "内部外部・直接間接金融",
+              "topics": [
+                "fin-dividend"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "f7-2",
+              "title": "企業間信用・リース",
+              "topics": [
+                "fin-dividend",
+                "fin-standards"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "f7-3",
+              "title": "負債・自己資本コスト・WACC",
+              "topics": [
+                "fin-capital"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "f7-4",
+              "title": "配当・自己株式・還元",
+              "topics": [
+                "fin-dividend"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "f7-5",
+              "title": "レバレッジ・MM理論",
+              "topics": [
+                "fin-capital-structure"
+              ],
+              "status": "対応候補・本文要照合"
+            }
           ]
         },
         {
@@ -565,7 +1156,33 @@
             "異なる耐用年数・不確実性・複数案件の複合計算"
           ],
           "status": "初稿対応・細目要監査",
-          "sourcePage": "12–13"
+          "sourcePage": "12–13",
+          "auditItems": [
+            {
+              "id": "f8-1",
+              "title": "時間価値・DCF・NPV",
+              "topics": [
+                "fin-investment"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "f8-2",
+              "title": "回収期間・会計利益率・IRR・収益性指数",
+              "topics": [
+                "fin-irr"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "f8-3",
+              "title": "不確実性下の投資",
+              "topics": [
+                "fin-risk-management"
+              ],
+              "status": "対応候補・本文要照合"
+            }
+          ]
         },
         {
           "id": "f9",
@@ -594,6 +1211,32 @@
               ],
               "status": "増補済み・独立監査待ち"
             }
+          ],
+          "auditItems": [
+            {
+              "id": "f9-1",
+              "title": "期待収益・分散・相関",
+              "topics": [
+                "fin-portfolio"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "f9-2",
+              "title": "効率的集合・最適選択",
+              "topics": [
+                "fin-portfolio"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "f9-3",
+              "title": "市場効率性・CAPM・市場モデル",
+              "topics": [
+                "fin-capm"
+              ],
+              "status": "対応候補・本文要照合"
+            }
           ]
         },
         {
@@ -616,6 +1259,41 @@
                 "買収評価：資産・収益・市場の三方向"
               ],
               "status": "増補済み・独立監査待ち"
+            }
+          ],
+          "auditItems": [
+            {
+              "id": "f10-1",
+              "title": "配当割引・PER・PBR",
+              "topics": [
+                "fin-valuation"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "f10-2",
+              "title": "株価CF倍率・残余利益",
+              "topics": [
+                "fin-residual"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "f10-3",
+              "title": "DCF企業価値・継続価値",
+              "topics": [
+                "fin-valuation"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "f10-4",
+              "title": "買収の収益還元・純資産・比較倍率",
+              "topics": [
+                "fin-valuation",
+                "fin-residual"
+              ],
+              "status": "対応候補・本文要照合"
             }
           ]
         },
@@ -640,6 +1318,40 @@
               ],
               "status": "増補済み・独立監査待ち"
             }
+          ],
+          "auditItems": [
+            {
+              "id": "f11-1",
+              "title": "リスクの分類と対策",
+              "topics": [
+                "fin-risk-management"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "f11-2",
+              "title": "コール・プット",
+              "topics": [
+                "fin-derivatives"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "f11-3",
+              "title": "先渡・先物・為替予約",
+              "topics": [
+                "fin-derivatives"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "f11-4",
+              "title": "金利・通貨スワップ",
+              "topics": [
+                "fin-derivatives"
+              ],
+              "status": "対応候補・本文要照合"
+            }
           ]
         },
         {
@@ -650,7 +1362,9 @@
             "公式のその他項目は範囲が閉じていない。過去問・新規分野・年度改訂から未収録論点を継続抽出する。"
           ],
           "status": "開放範囲・網羅性判定不可",
-          "sourcePage": "13"
+          "sourcePage": "13",
+          "openScope": true,
+          "auditItems": []
         }
       ]
     },
@@ -784,6 +1498,32 @@
               ],
               "status": "増補済み・独立監査待ち"
             }
+          ],
+          "auditItems": [
+            {
+              "id": "m1-1",
+              "title": "戦略意思決定・階層・策定",
+              "topics": [
+                "mgmt-01"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "m1-2",
+              "title": "外部内部環境・VRIO",
+              "topics": [
+                "mgmt-01"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "m1-3",
+              "title": "中核能力・動的能力",
+              "topics": [
+                "mgmt-01"
+              ],
+              "status": "対応候補・本文要照合"
+            }
           ]
         },
         {
@@ -796,7 +1536,33 @@
             "経験曲線の数値演習・事業ポートフォリオの限界"
           ],
           "sourcePage": "13",
-          "status": "対応付け済み・細目要監査"
+          "status": "対応付け済み・細目要監査",
+          "auditItems": [
+            {
+              "id": "m2-1",
+              "title": "ドメイン・多角化・相乗効果",
+              "topics": [
+                "mgmt-03"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "m2-2",
+              "title": "PPM・ライフサイクル・経験曲線",
+              "topics": [
+                "mgmt-03"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "m2-3",
+              "title": "垂直統合・買収・提携",
+              "topics": [
+                "mgmt-03"
+              ],
+              "status": "対応候補・本文要照合"
+            }
+          ]
         },
         {
           "id": "m3",
@@ -809,7 +1575,34 @@
             "プラットフォーム・業界標準の詳細"
           ],
           "sourcePage": "13",
-          "status": "対応付け済み・細目要監査"
+          "status": "対応付け済み・細目要監査",
+          "auditItems": [
+            {
+              "id": "m3-1",
+              "title": "産業構造・価値連鎖",
+              "topics": [
+                "mgmt-02"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "m3-2",
+              "title": "競争優位・地位別戦略",
+              "topics": [
+                "mgmt-02"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "m3-3",
+              "title": "標準・プラットフォーム",
+              "topics": [
+                "mgmt-02",
+                "mgmt-network"
+              ],
+              "status": "対応候補・本文要照合"
+            }
+          ]
         },
         {
           "id": "m4",
@@ -822,7 +1615,41 @@
             "技術ロードマップ・ビジネスモデル・起業家の判断"
           ],
           "sourcePage": "13",
-          "status": "対応付け済み・細目要監査"
+          "status": "対応付け済み・細目要監査",
+          "auditItems": [
+            {
+              "id": "m4-1",
+              "title": "技術と市場・知財戦略",
+              "topics": [
+                "mgmt-04"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "m4-2",
+              "title": "革新プロセス・ジレンマ・開放型革新",
+              "topics": [
+                "mgmt-04"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "m4-3",
+              "title": "製品構造・新事業・起業",
+              "topics": [
+                "mgmt-04"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "m4-4",
+              "title": "知識管理",
+              "topics": [
+                "mgmt-learning"
+              ],
+              "status": "対応候補・本文要照合"
+            }
+          ]
         },
         {
           "id": "m5",
@@ -834,7 +1661,33 @@
             "海外子会社の役割類型と統治の複合問題"
           ],
           "sourcePage": "13",
-          "status": "対応付け済み・細目要監査"
+          "status": "対応付け済み・細目要監査",
+          "auditItems": [
+            {
+              "id": "m5-1",
+              "title": "輸出・直接投資・ライセンス",
+              "topics": [
+                "mgmt-international"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "m5-2",
+              "title": "統合と現地適応・四戦略",
+              "topics": [
+                "mgmt-international"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "m5-3",
+              "title": "本社子会社・組織",
+              "topics": [
+                "mgmt-international"
+              ],
+              "status": "対応候補・本文要照合"
+            }
+          ]
         },
         {
           "id": "m6",
@@ -846,7 +1699,25 @@
             "企業監視・倫理の具体事例・制度の年度確認"
           ],
           "sourcePage": "14",
-          "status": "対応付け済み・細目要監査"
+          "status": "対応付け済み・細目要監査",
+          "auditItems": [
+            {
+              "id": "m6-1",
+              "title": "社会責任・共通価値・利害関係者",
+              "topics": [
+                "mgmt-csr"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "m6-2",
+              "title": "企業統治・監視・倫理",
+              "topics": [
+                "mgmt-csr"
+              ],
+              "status": "対応候補・本文要照合"
+            }
+          ]
         },
         {
           "id": "m7",
@@ -858,7 +1729,25 @@
             "ファミリーガバナンス・承継の法務と政策との対応"
           ],
           "sourcePage": "14",
-          "status": "対応付け済み・細目要監査"
+          "status": "対応付け済み・細目要監査",
+          "auditItems": [
+            {
+              "id": "m7-1",
+              "title": "創業・承継",
+              "topics": [
+                "mgmt-family"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "m7-2",
+              "title": "家族企業と地域",
+              "topics": [
+                "mgmt-family"
+              ],
+              "status": "対応候補・本文要照合"
+            }
+          ]
         },
         {
           "id": "m8",
@@ -870,7 +1759,33 @@
             "調整メカニズムの比較・権限と責任"
           ],
           "sourcePage": "14",
-          "status": "対応付け済み・細目要監査"
+          "status": "対応付け済み・細目要監査",
+          "auditItems": [
+            {
+              "id": "m8-1",
+              "title": "組織目標・階層",
+              "topics": [
+                "mgmt-05"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "m8-2",
+              "title": "分業・調整・横断関係",
+              "topics": [
+                "mgmt-05"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "m8-3",
+              "title": "権限と責任",
+              "topics": [
+                "mgmt-05"
+              ],
+              "status": "対応候補・本文要照合"
+            }
+          ]
         },
         {
           "id": "m9",
@@ -883,7 +1798,34 @@
             "持株会社・ネットワーク組織の詳細比較"
           ],
           "sourcePage": "14",
-          "status": "対応付け済み・細目要監査"
+          "status": "対応付け済み・細目要監査",
+          "auditItems": [
+            {
+              "id": "m9-1",
+              "title": "事業部・職能・マトリックス",
+              "topics": [
+                "mgmt-05"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "m9-2",
+              "title": "ネットワーク・持株会社",
+              "topics": [
+                "mgmt-05",
+                "mgmt-network"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "m9-3",
+              "title": "機械的・有機的管理",
+              "topics": [
+                "mgmt-05"
+              ],
+              "status": "対応候補・本文要照合"
+            }
+          ]
         },
         {
           "id": "m10",
@@ -895,7 +1837,25 @@
             "文化と戦略の適合・サブカルチャーの事例演習"
           ],
           "sourcePage": "14",
-          "status": "対応付け済み・細目要監査"
+          "status": "対応付け済み・細目要監査",
+          "auditItems": [
+            {
+              "id": "m10-1",
+              "title": "文化の階層",
+              "topics": [
+                "mgmt-culture"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "m10-2",
+              "title": "文化と戦略・変革",
+              "topics": [
+                "mgmt-culture"
+              ],
+              "status": "対応候補・本文要照合"
+            }
+          ]
         },
         {
           "id": "m11",
@@ -916,6 +1876,32 @@
               ],
               "status": "増補済み・独立監査待ち"
             }
+          ],
+          "auditItems": [
+            {
+              "id": "m11-1",
+              "title": "限定合理性・認知偏り・ストレス",
+              "topics": [
+                "mgmt-06"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "m11-2",
+              "title": "欲求・期待・内発・目標設定",
+              "topics": [
+                "mgmt-06"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "m11-3",
+              "title": "組織コミットメント",
+              "topics": [
+                "mgmt-06"
+              ],
+              "status": "対応候補・本文要照合"
+            }
           ]
         },
         {
@@ -928,7 +1914,39 @@
             "対立管理の五類型・小集団活動の事例"
           ],
           "sourcePage": "14",
-          "status": "対応付け済み・細目要監査"
+          "status": "対応付け済み・細目要監査",
+          "auditItems": [
+            {
+              "id": "m12-1",
+              "title": "リーダー特性・行動・状況・変革",
+              "topics": [
+                "mgmt-leadership"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "m12-2",
+              "title": "権力・政治・対立管理",
+              "topics": [
+                "mgmt-leadership"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "m12-3",
+              "title": "集団思考・集団極性化・心理的安全",
+              "topics": [
+                "mgmt-leadership"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "m12-4",
+              "title": "小集団活動",
+              "topics": [],
+              "status": "対応先要特定"
+            }
+          ]
         },
         {
           "id": "m13",
@@ -940,7 +1958,25 @@
             "資源依存・制度理論の複合演習"
           ],
           "sourcePage": "14",
-          "status": "対応付け済み・細目要監査"
+          "status": "対応付け済み・細目要監査",
+          "auditItems": [
+            {
+              "id": "m13-1",
+              "title": "資源依存・正当性・取引費用",
+              "topics": [
+                "mgmt-network"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "m13-2",
+              "title": "ネットワーク・集積・エコシステム",
+              "topics": [
+                "mgmt-network"
+              ],
+              "status": "対応候補・本文要照合"
+            }
+          ]
         },
         {
           "id": "m14",
@@ -953,7 +1989,33 @@
             "成長段階と組織構造を比較する長文問題"
           ],
           "sourcePage": "14",
-          "status": "対応付け済み・細目要監査"
+          "status": "対応付け済み・細目要監査",
+          "auditItems": [
+            {
+              "id": "m14-1",
+              "title": "変革段階・組織開発",
+              "topics": [
+                "mgmt-culture"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "m14-2",
+              "title": "学習と知識",
+              "topics": [
+                "mgmt-learning"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "m14-3",
+              "title": "成長段階・戦略と組織",
+              "topics": [
+                "mgmt-culture"
+              ],
+              "status": "対応候補・本文要照合"
+            }
+          ]
         },
         {
           "id": "m15",
@@ -970,7 +2032,61 @@
             "賃金体系・昇進・資格制度と労働条件管理の詳細"
           ],
           "sourcePage": "14",
-          "status": "対応付け済み・細目要監査"
+          "status": "対応付け済み・細目要監査",
+          "auditItems": [
+            {
+              "id": "m15-1",
+              "title": "労働基準・契約・派遣・労使関係",
+              "topics": [
+                "mgmt-08",
+                "mgmt-labor-employment"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "m15-2",
+              "title": "均等・育児介護・非正規・ハラスメント",
+              "topics": [
+                "mgmt-labor-care",
+                "mgmt-labor-employment"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "m15-3",
+              "title": "労働安全衛生・労働社会保険",
+              "topics": [
+                "mgmt-labor-safety"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "m15-4",
+              "title": "採用配置・資格・評価昇進・賃金",
+              "topics": [
+                "mgmt-07"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "m15-5",
+              "title": "能力開発・キャリア・メンタリング",
+              "topics": [
+                "mgmt-07"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "m15-6",
+              "title": "労働条件管理・戦略的人事",
+              "topics": [
+                "mgmt-07",
+                "mgmt-08",
+                "mgmt-labor-safety"
+              ],
+              "status": "対応候補・本文要照合"
+            }
+          ]
         },
         {
           "id": "m16",
@@ -983,7 +2099,26 @@
             "マーケティング概念の歴史的変遷"
           ],
           "sourcePage": "14",
-          "status": "対応付け済み・細目要監査"
+          "status": "対応付け済み・細目要監査",
+          "auditItems": [
+            {
+              "id": "m16-1",
+              "title": "マーケティング概念・歴史",
+              "topics": [
+                "mgmt-09"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "m16-2",
+              "title": "分類・基本思想",
+              "topics": [
+                "mgmt-09",
+                "mgmt-10"
+              ],
+              "status": "対応候補・本文要照合"
+            }
+          ]
         },
         {
           "id": "m17",
@@ -997,7 +2132,35 @@
             "市場地位とマーケティング施策の複合演習"
           ],
           "sourcePage": "14",
-          "status": "対応付け済み・細目要監査"
+          "status": "対応付け済み・細目要監査",
+          "auditItems": [
+            {
+              "id": "m17-1",
+              "title": "使命・ドメイン・市場環境・成長機会",
+              "topics": [
+                "mgmt-01",
+                "mgmt-09"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "m17-2",
+              "title": "STP・4Pと実行管理",
+              "topics": [
+                "mgmt-09",
+                "mgmt-10"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "m17-3",
+              "title": "非営利・社会的マーケティング",
+              "topics": [
+                "mgmt-10"
+              ],
+              "status": "対応候補・本文要照合"
+            }
+          ]
         },
         {
           "id": "m18",
@@ -1009,7 +2172,33 @@
             "標本誤差・実験デザイン・分析結果の読解"
           ],
           "sourcePage": "14",
-          "status": "対応付け済み・細目要監査"
+          "status": "対応付け済み・細目要監査",
+          "auditItems": [
+            {
+              "id": "m18-1",
+              "title": "調査課題と対象設定",
+              "topics": [
+                "mgmt-research"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "m18-2",
+              "title": "データ源・抽出・調査技法",
+              "topics": [
+                "mgmt-research"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "m18-3",
+              "title": "分析・実験・因果",
+              "topics": [
+                "mgmt-research"
+              ],
+              "status": "対応候補・本文要照合"
+            }
+          ]
         },
         {
           "id": "m19",
@@ -1023,7 +2212,42 @@
             "サービス品質・生産財・デジタル分析の実践"
           ],
           "sourcePage": "14",
-          "status": "対応付け済み・細目要監査"
+          "status": "対応付け済み・細目要監査",
+          "auditItems": [
+            {
+              "id": "m19-1",
+              "title": "関係性・CRM",
+              "topics": [
+                "mgmt-11"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "m19-2",
+              "title": "サービス品質・サービス化",
+              "topics": [
+                "mgmt-10"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "m19-3",
+              "title": "デジタル・国際・原産国効果",
+              "topics": [
+                "mgmt-10",
+                "mgmt-international"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "m19-4",
+              "title": "生産財",
+              "topics": [
+                "mgmt-10"
+              ],
+              "status": "対応候補・本文要照合"
+            }
+          ]
         },
         {
           "id": "m20",
@@ -1045,6 +2269,38 @@
               ],
               "status": "増補済み・独立監査待ち"
             }
+          ],
+          "auditItems": [
+            {
+              "id": "m20-1",
+              "title": "製品分類・価値・製品ミックス",
+              "topics": [
+                "mgmt-brand"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "m20-2",
+              "title": "PLC・普及・先発後発",
+              "topics": [
+                "mgmt-brand"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "m20-3",
+              "title": "アイデア・市場評価・定性定量開発",
+              "topics": [
+                "mgmt-brand"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "m20-4",
+              "title": "包装・製品寿命延長・入替",
+              "topics": [],
+              "status": "対応先要特定"
+            }
           ]
         },
         {
@@ -1057,7 +2313,33 @@
             "ブランド構築・維持のモデル詳細"
           ],
           "sourcePage": "15",
-          "status": "対応付け済み・細目要監査"
+          "status": "対応付け済み・細目要監査",
+          "auditItems": [
+            {
+              "id": "m21-1",
+              "title": "顧客との関係・ブランド資産・種類",
+              "topics": [
+                "mgmt-brand"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "m21-2",
+              "title": "ブランド要素・機能",
+              "topics": [
+                "mgmt-brand"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "m21-3",
+              "title": "構築・維持・顧客経験",
+              "topics": [
+                "mgmt-brand"
+              ],
+              "status": "対応候補・本文要照合"
+            }
+          ]
         },
         {
           "id": "m22",
@@ -1069,7 +2351,41 @@
             "認知・感情・関与の各モデル比較"
           ],
           "sourcePage": "15",
-          "status": "対応付け済み・細目要監査"
+          "status": "対応付け済み・細目要監査",
+          "auditItems": [
+            {
+              "id": "m22-1",
+              "title": "文化・社会・個人要因",
+              "topics": [
+                "mgmt-11"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "m22-2",
+              "title": "関与・購買過程・意思決定モデル",
+              "topics": [
+                "mgmt-11"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "m22-3",
+              "title": "認知学習・態度・信念",
+              "topics": [
+                "mgmt-11"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "m22-4",
+              "title": "感覚・感情",
+              "topics": [
+                "mgmt-11"
+              ],
+              "status": "対応候補・本文要照合"
+            }
+          ]
         },
         {
           "id": "m23",
@@ -1090,6 +2406,32 @@
               ],
               "status": "増補済み・独立監査待ち"
             }
+          ],
+          "auditItems": [
+            {
+              "id": "m23-1",
+              "title": "内的外的参照価格・価格関与",
+              "topics": [
+                "mgmt-pricing"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "m23-2",
+              "title": "価格の負担と便益・文脈",
+              "topics": [
+                "mgmt-pricing"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "m23-3",
+              "title": "価格戦略・デジタル価格・決定法",
+              "topics": [
+                "mgmt-pricing"
+              ],
+              "status": "対応候補・本文要照合"
+            }
           ]
         },
         {
@@ -1102,7 +2444,33 @@
             "広告表現規制の年度確認・効果測定の複合演習"
           ],
           "sourcePage": "15",
-          "status": "対応付け済み・細目要監査"
+          "status": "対応付け済み・細目要監査",
+          "auditItems": [
+            {
+              "id": "m24-1",
+              "title": "コミュニケーション概念・媒体",
+              "topics": [
+                "mgmt-communication"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "m24-2",
+              "title": "広告計画と効果測定",
+              "topics": [
+                "mgmt-communication"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "m24-3",
+              "title": "広告表現・規制・SNS",
+              "topics": [
+                "mgmt-communication"
+              ],
+              "status": "対応候補・本文要照合"
+            }
+          ]
         },
         {
           "id": "m25",
@@ -1114,7 +2482,41 @@
             "販売員管理・関係法令・販促の実践"
           ],
           "sourcePage": "15",
-          "status": "対応付け済み・細目要監査"
+          "status": "対応付け済み・細目要監査",
+          "auditItems": [
+            {
+              "id": "m25-1",
+              "title": "販促ミックス・プッシュプル・PLC",
+              "topics": [
+                "mgmt-communication"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "m25-2",
+              "title": "人的販売・販売員管理",
+              "topics": [
+                "mgmt-communication"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "m25-3",
+              "title": "顧客・流通・社内向け販促",
+              "topics": [
+                "mgmt-communication"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "m25-4",
+              "title": "PR・パブリシティ",
+              "topics": [
+                "mgmt-communication"
+              ],
+              "status": "対応候補・本文要照合"
+            }
+          ]
         },
         {
           "id": "m26",
@@ -1126,7 +2528,33 @@
             "チャネル管理とデジタル統合の複合演習"
           ],
           "sourcePage": "15",
-          "status": "対応付け済み・細目要監査"
+          "status": "対応付け済み・細目要監査",
+          "auditItems": [
+            {
+              "id": "m26-1",
+              "title": "チャネル目的・機能・統合",
+              "topics": [
+                "mgmt-channel"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "m26-2",
+              "title": "開放選択専属・評価管理",
+              "topics": [
+                "mgmt-channel"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "m26-3",
+              "title": "オムニチャネル・O2O・OMO",
+              "topics": [
+                "mgmt-channel"
+              ],
+              "status": "対応候補・本文要照合"
+            }
+          ]
         },
         {
           "id": "m27",
@@ -1136,7 +2564,9 @@
             "公式のその他項目は範囲が閉じていない。過去問・新規分野・年度改訂から未収録論点を継続抽出する。"
           ],
           "status": "開放範囲・網羅性判定不可",
-          "sourcePage": "14"
+          "sourcePage": "14",
+          "openScope": true,
+          "auditItems": []
         },
         {
           "id": "m28",
@@ -1146,7 +2576,9 @@
             "公式のその他項目は範囲が閉じていない。過去問・新規分野・年度改訂から未収録論点を継続抽出する。"
           ],
           "status": "開放範囲・網羅性判定不可",
-          "sourcePage": "14"
+          "sourcePage": "14",
+          "openScope": true,
+          "auditItems": []
         },
         {
           "id": "m29",
@@ -1156,7 +2588,9 @@
             "公式のその他項目は範囲が閉じていない。過去問・新規分野・年度改訂から未収録論点を継続抽出する。"
           ],
           "status": "開放範囲・網羅性判定不可",
-          "sourcePage": "15"
+          "sourcePage": "15",
+          "openScope": true,
+          "auditItems": []
         }
       ]
     },
@@ -1265,7 +2699,25 @@
             "管理指標の複合計算・実際の事例比較"
           ],
           "sourcePage": "15",
-          "status": "初稿対応・細目要監査"
+          "status": "初稿対応・細目要監査",
+          "auditItems": [
+            {
+              "id": "o1-1",
+              "title": "管理機能と生産性・品質・費用・納期",
+              "topics": [
+                "ops-01"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "o1-2",
+              "title": "安全・モラール・環境",
+              "topics": [
+                "ops-01"
+              ],
+              "status": "対応候補・本文要照合"
+            }
+          ]
         },
         {
           "id": "o2",
@@ -1302,6 +2754,106 @@
               ],
               "status": "増補済み・独立監査待ち"
             }
+          ],
+          "auditItems": [
+            {
+              "id": "o2-1",
+              "title": "JIT・平準化・かんばん",
+              "topics": [
+                "ops-jit"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "o2-2",
+              "title": "材料・加工・自動機・生産IT",
+              "topics": [
+                "ops-design"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "o2-3",
+              "title": "ERP・SCM・FA",
+              "topics": [
+                "ops-design",
+                "ops-03"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "o2-4",
+              "title": "循環生産・3R・LCA",
+              "topics": [
+                "ops-design"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "o2-5",
+              "title": "製品設計・標準化・VA/VE・CAD/CAM",
+              "topics": [
+                "ops-design"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "o2-6",
+              "title": "受注見込・個別ロット連続・セル・GT",
+              "topics": [
+                "ops-01"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "o2-7",
+              "title": "受注登録・能力予約・製番",
+              "topics": [
+                "ops-03"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "o2-8",
+              "title": "ラインバランスと編成効率",
+              "topics": [
+                "ops-02"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "o2-9",
+              "title": "需要予測",
+              "topics": [
+                "ops-forecast"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "o2-10",
+              "title": "MRP・MPS・BOM",
+              "topics": [
+                "ops-mrp"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "o2-11",
+              "title": "日程・PERT・負荷人員計画",
+              "topics": [
+                "ops-02",
+                "ops-pert"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "o2-12",
+              "title": "現品・余力・進捗・稼働・差立",
+              "topics": [
+                "ops-03"
+              ],
+              "status": "対応候補・本文要照合"
+            }
           ]
         },
         {
@@ -1317,7 +2869,43 @@
             "標準時間・連合作業の複合図表問題"
           ],
           "sourcePage": "16",
-          "status": "初稿対応・細目要監査"
+          "status": "初稿対応・細目要監査",
+          "auditItems": [
+            {
+              "id": "o3-1",
+              "title": "標準作業・時間・訓練・多能工",
+              "topics": [
+                "ops-ie",
+                "ops-05"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "o3-2",
+              "title": "時間研究・工程分析・連合作業",
+              "topics": [
+                "ops-ie"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "o3-3",
+              "title": "動作・稼働分析",
+              "topics": [
+                "ops-ie"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "o3-4",
+              "title": "3S・ECRS・5W1H・動作経済",
+              "topics": [
+                "ops-ie",
+                "ops-05"
+              ],
+              "status": "対応候補・本文要照合"
+            }
+          ]
         },
         {
           "id": "o4",
@@ -1332,7 +2920,50 @@
             "SLPの活動相互関係図・工具管理"
           ],
           "sourcePage": "16",
-          "status": "初稿対応・細目要監査"
+          "status": "初稿対応・細目要監査",
+          "auditItems": [
+            {
+              "id": "o4-1",
+              "title": "5S・工具・設備ライフサイクル・TPM",
+              "topics": [
+                "ops-maintenance",
+                "ops-05"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "o4-2",
+              "title": "保全・故障・修理",
+              "topics": [
+                "ops-maintenance"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "o4-3",
+              "title": "効率・更新・償却",
+              "topics": [
+                "ops-maintenance"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "o4-4",
+              "title": "SLP・DI・配置",
+              "topics": [
+                "ops-05"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "o4-5",
+              "title": "独立案排他案・現価年価終価",
+              "topics": [
+                "ops-maintenance"
+              ],
+              "status": "対応候補・本文要照合"
+            }
+          ]
         },
         {
           "id": "o5",
@@ -1350,7 +2981,58 @@
             "廃棄物・環境法令の詳細"
           ],
           "sourcePage": "16",
-          "status": "初稿対応・細目要監査"
+          "status": "初稿対応・細目要監査",
+          "auditItems": [
+            {
+              "id": "o5-1",
+              "title": "資材計画・常備品・支給",
+              "topics": [
+                "ops-04"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "o5-2",
+              "title": "外注選定・指導・評価・製造委託",
+              "topics": [
+                "ops-04"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "o5-3",
+              "title": "ABC・発注方式・EOQ",
+              "topics": [
+                "ops-04"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "o5-4",
+              "title": "荷役",
+              "topics": [
+                "ops-05"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "o5-5",
+              "title": "QC・新QC・TQM・ISO9000",
+              "topics": [
+                "ops-qc",
+                "ops-06"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "o5-6",
+              "title": "廃棄物・環境法規・ISO14000",
+              "topics": [
+                "ops-design"
+              ],
+              "status": "対応候補・本文要照合"
+            }
+          ]
         },
         {
           "id": "o6",
@@ -1364,7 +3046,9 @@
             "過年度問題・新技術から未分類論点を抽出"
           ],
           "sourcePage": "16",
-          "status": "初稿対応・細目要監査"
+          "status": "初稿対応・細目要監査",
+          "openScope": true,
+          "auditItems": []
         },
         {
           "id": "o7",
@@ -1378,7 +3062,50 @@
             "立地と商業統計・業態の詳細比較"
           ],
           "sourcePage": "16",
-          "status": "初稿対応・細目要監査"
+          "status": "初稿対応・細目要監査",
+          "auditItems": [
+            {
+              "id": "o7-1",
+              "title": "都市計画・店舗立地法・中心市街地・建築",
+              "topics": [
+                "ops-retail-law"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "o7-2",
+              "title": "立地適正化・防火・廃棄物",
+              "topics": [
+                "ops-retail-law"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "o7-3",
+              "title": "商圏・出店評価",
+              "topics": [
+                "ops-07"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "o7-4",
+              "title": "商業集積・店舗業態・無店舗販売",
+              "topics": [
+                "ops-07"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "o7-5",
+              "title": "店舗構造・駐車場・看板・景観",
+              "topics": [
+                "ops-07",
+                "ops-retail-law"
+              ],
+              "status": "対応候補・本文要照合"
+            }
+          ]
         },
         {
           "id": "o8",
@@ -1403,6 +3130,66 @@
               ],
               "status": "増補済み・独立監査待ち"
             }
+          ],
+          "auditItems": [
+            {
+              "id": "o8-1",
+              "title": "販売仕入予算・品揃え",
+              "topics": [
+                "ops-08",
+                "ops-merch"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "o8-2",
+              "title": "価格表示・競争・許認可",
+              "topics": [
+                "ops-retail-law"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "o8-3",
+              "title": "仕入形態・条件",
+              "topics": [
+                "ops-merch"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "o8-4",
+              "title": "売場構成・VMD・棚割",
+              "topics": [
+                "ops-merch"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "o8-5",
+              "title": "什器・照明・色彩",
+              "topics": [
+                "ops-merch"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "o8-6",
+              "title": "値入・価格・特売値下",
+              "topics": [
+                "ops-merch",
+                "ops-08"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "o8-7",
+              "title": "店内外販促",
+              "topics": [
+                "ops-merch"
+              ],
+              "status": "対応候補・本文要照合"
+            }
           ]
         },
         {
@@ -1419,7 +3206,35 @@
             "物流統計・改正法の細かな条件"
           ],
           "sourcePage": "17",
-          "status": "初稿対応・細目要監査"
+          "status": "初稿対応・細目要監査",
+          "auditItems": [
+            {
+              "id": "o9-1",
+              "title": "補充・発注・在庫・予測",
+              "topics": [
+                "ops-04",
+                "ops-forecast",
+                "ops-09"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "o9-2",
+              "title": "輸配送・ネットワーク・ユニットロード",
+              "topics": [
+                "ops-logistics"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "o9-3",
+              "title": "共同輸配送・物流センター",
+              "topics": [
+                "ops-logistics"
+              ],
+              "status": "対応候補・本文要照合"
+            }
+          ]
         },
         {
           "id": "o10",
@@ -1443,6 +3258,33 @@
               ],
               "status": "増補済み・独立監査待ち"
             }
+          ],
+          "auditItems": [
+            {
+              "id": "o10-1",
+              "title": "POS・顧客管理",
+              "topics": [
+                "ops-10"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "o10-2",
+              "title": "商品コード・受発注",
+              "topics": [
+                "ops-codes",
+                "ops-10"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "o10-3",
+              "title": "バーコード・電子タグ・追跡",
+              "topics": [
+                "ops-codes"
+              ],
+              "status": "対応候補・本文要照合"
+            }
           ]
         },
         {
@@ -1457,7 +3299,9 @@
             "年度別の商業・流通統計、新技術、新規出題論点の確認"
           ],
           "sourcePage": "17",
-          "status": "初稿対応・細目要監査"
+          "status": "初稿対応・細目要監査",
+          "openScope": true,
+          "auditItems": []
         }
       ]
     },
@@ -1556,7 +3400,59 @@
             "再編・倒産の決議要件と債権者保護の詳細"
           ],
           "sourcePage": "17",
-          "status": "初稿対応・細目要監査"
+          "status": "初稿対応・細目要監査",
+          "auditItems": [
+            {
+              "id": "l1-1",
+              "title": "個人開業と準備",
+              "topics": [
+                "law-startup"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "l1-2",
+              "title": "法人・会社・組合の設立登記",
+              "topics": [
+                "law-startup",
+                "law-02"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "l1-3",
+              "title": "許認可・雇用・社会保険",
+              "topics": [
+                "law-startup"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "l1-4",
+              "title": "税務届出・棚卸評価・償却",
+              "topics": [
+                "law-startup"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "l1-5",
+              "title": "合併事業譲渡・組織変更",
+              "topics": [
+                "law-05"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "l1-6",
+              "title": "倒産・解散・清算",
+              "topics": [
+                "law-insolvency",
+                "law-09"
+              ],
+              "status": "対応候補・本文要照合"
+            }
+          ]
         },
         {
           "id": "l2",
@@ -1582,6 +3478,56 @@
                 "著作隣接権と著作者の権利"
               ],
               "status": "増補済み・独立監査待ち"
+            }
+          ],
+          "auditItems": [
+            {
+              "id": "l2-1",
+              "title": "特許・実用新案・意匠・商標",
+              "topics": [
+                "law-06"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "l2-2",
+              "title": "著作権・人格権・著作隣接権・期間",
+              "topics": [
+                "law-06"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "l2-3",
+              "title": "侵害対応",
+              "topics": [
+                "law-06"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "l2-4",
+              "title": "知財譲渡・ライセンス・音楽キャラクター・ソフトウェア",
+              "topics": [
+                "law-license"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "l2-5",
+              "title": "営業秘密",
+              "topics": [
+                "law-07"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "l2-6",
+              "title": "知財国際条約",
+              "topics": [
+                "law-international-ip"
+              ],
+              "status": "対応候補・本文要照合"
             }
           ]
         },
@@ -1611,6 +3557,58 @@
               ],
               "status": "増補済み・独立監査待ち"
             }
+          ],
+          "auditItems": [
+            {
+              "id": "l3-1",
+              "title": "契約成立・有効性・意思表示",
+              "topics": [
+                "law-01"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "l3-2",
+              "title": "外国取引・英文契約",
+              "topics": [
+                "law-international-contract"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "l3-3",
+              "title": "秘密保持・共同開発",
+              "topics": [
+                "law-license"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "l3-4",
+              "title": "売買・不動産・有価証券・貿易条件",
+              "topics": [
+                "law-property",
+                "law-01",
+                "law-international-contract"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "l3-5",
+              "title": "販売店・提携・フランチャイズ・買収合併契約",
+              "topics": [
+                "law-international-contract"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "l3-6",
+              "title": "裁判・仲裁・調停・国際執行",
+              "topics": [
+                "law-international-contract"
+              ],
+              "status": "対応候補・本文要照合"
+            }
           ]
         },
         {
@@ -1636,7 +3634,74 @@
             "相続・事業承継の複合演習と期限確認"
           ],
           "sourcePage": "17",
-          "status": "初稿対応・細目要監査"
+          "status": "初稿対応・細目要監査",
+          "auditItems": [
+            {
+              "id": "l4-1",
+              "title": "民法の物権・債権・相続",
+              "topics": [
+                "law-property",
+                "law-01",
+                "law-succession"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "l4-2",
+              "title": "会社種類・株式・機関設計",
+              "topics": [
+                "law-02",
+                "law-03",
+                "law-04"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "l4-3",
+              "title": "計算・再編・譲渡制限・役員義務",
+              "topics": [
+                "law-03",
+                "law-04",
+                "law-05"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "l4-4",
+              "title": "金商法・独禁法・不競法",
+              "topics": [
+                "law-securities",
+                "law-08",
+                "law-07"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "l4-5",
+              "title": "製造物責任・消費者",
+              "topics": [
+                "law-consumer"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "l4-6",
+              "title": "営業秘密・承継",
+              "topics": [
+                "law-07",
+                "law-succession"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "l4-7",
+              "title": "国際売買・外国公務員贈賄",
+              "topics": [
+                "law-international-contract"
+              ],
+              "status": "対応候補・本文要照合"
+            }
+          ]
         },
         {
           "id": "l5",
@@ -1651,7 +3716,34 @@
             "2027・2028年度の開示制度改正"
           ],
           "sourcePage": "18",
-          "status": "初稿対応・細目要監査"
+          "status": "初稿対応・細目要監査",
+          "auditItems": [
+            {
+              "id": "l5-1",
+              "title": "資本市場・発行開示・通知",
+              "topics": [
+                "law-securities"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "l5-2",
+              "title": "有報・IR",
+              "topics": [
+                "law-securities"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "l5-3",
+              "title": "社債・株式公開",
+              "topics": [
+                "law-securities",
+                "law-04"
+              ],
+              "status": "対応候補・本文要照合"
+            }
+          ]
         },
         {
           "id": "l6",
@@ -1665,7 +3757,9 @@
             "法令改正・過年度出題の未分類論点を追加"
           ],
           "sourcePage": "18",
-          "status": "初稿対応・細目要監査"
+          "status": "初稿対応・細目要監査",
+          "openScope": true,
+          "auditItems": []
         }
       ]
     },
@@ -1764,6 +3858,41 @@
               ],
               "status": "増補済み・独立監査待ち"
             }
+          ],
+          "auditItems": [
+            {
+              "id": "i1-1",
+              "title": "プロセッサ・メモリ・入出力",
+              "topics": [
+                "it-01"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "i1-2",
+              "title": "OS・ファイル・ミドルウェア・アプリ",
+              "topics": [
+                "it-01"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "i1-3",
+              "title": "論理・数値・プログラム技法",
+              "topics": [
+                "it-01",
+                "it-algorithm"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "i1-4",
+              "title": "プロセス中心・データ中心・オブジェクト指向",
+              "topics": [
+                "it-05"
+              ],
+              "status": "対応候補・本文要照合"
+            }
           ]
         },
         {
@@ -1779,7 +3908,42 @@
             "アクセシビリティ規格・Web設計の詳細"
           ],
           "sourcePage": "18",
-          "status": "初稿対応・細目要監査"
+          "status": "初稿対応・細目要監査",
+          "auditItems": [
+            {
+              "id": "i2-1",
+              "title": "クライアントサーバ・Web・仮想化",
+              "topics": [
+                "it-architecture"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "i2-2",
+              "title": "集中分散並列・実時間バッチ",
+              "topics": [
+                "it-architecture"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "i2-3",
+              "title": "UI・Web設計・マルチメディア",
+              "topics": [
+                "it-architecture",
+                "it-01"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "i2-4",
+              "title": "クラウド・OSS・ソーシャルソフト",
+              "topics": [
+                "it-architecture"
+              ],
+              "status": "対応候補・本文要照合"
+            }
+          ]
         },
         {
           "id": "i3",
@@ -1802,6 +3966,24 @@
                 "同時実行と障害回復"
               ],
               "status": "増補済み・独立監査待ち"
+            }
+          ],
+          "auditItems": [
+            {
+              "id": "i3-1",
+              "title": "DBの種類・構成・DBMS",
+              "topics": [
+                "it-03"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "i3-2",
+              "title": "正規化・SQL・トランザクション・回復",
+              "topics": [
+                "it-03"
+              ],
+              "status": "対応候補・本文要照合"
             }
           ]
         },
@@ -1827,6 +4009,32 @@
               ],
               "status": "増補済み・独立監査待ち"
             }
+          ],
+          "auditItems": [
+            {
+              "id": "i4-1",
+              "title": "ネットワーク種類構成・機器",
+              "topics": [
+                "it-02"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "i4-2",
+              "title": "通信プロトコル・アドレス・無線",
+              "topics": [
+                "it-02"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "i4-3",
+              "title": "通信保護",
+              "topics": [
+                "it-04"
+              ],
+              "status": "対応候補・本文要照合"
+            }
           ]
         },
         {
@@ -1840,7 +4048,26 @@
             "待ち行列・複合冗長化・品質評価の詳細"
           ],
           "sourcePage": "18",
-          "status": "初稿対応・細目要監査"
+          "status": "初稿対応・細目要監査",
+          "auditItems": [
+            {
+              "id": "i5-1",
+              "title": "性能と信頼性",
+              "topics": [
+                "it-performance"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "i5-2",
+              "title": "経済性",
+              "topics": [
+                "it-performance",
+                "it-procurement"
+              ],
+              "status": "対応候補・本文要照合"
+            }
+          ]
         },
         {
           "id": "i6",
@@ -1854,7 +4081,9 @@
             "新技術・過年度出題の追加照合"
           ],
           "sourcePage": "18",
-          "status": "初稿対応・細目要監査"
+          "status": "初稿対応・細目要監査",
+          "openScope": true,
+          "auditItems": []
         },
         {
           "id": "i7",
@@ -1872,7 +4101,82 @@
             "業務システムの統合演習"
           ],
           "sourcePage": "18",
-          "status": "初稿対応・細目要監査"
+          "status": "初稿対応・細目要監査",
+          "auditItems": [
+            {
+              "id": "i7-1",
+              "title": "経営連携・技術導入・投資ポートフォリオ・計画",
+              "topics": [
+                "it-06",
+                "it-procurement"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "i7-2",
+              "title": "ライフサイクル・戦略策定手法",
+              "topics": [
+                "it-06"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "i7-3",
+              "title": "ビジネスモデル・価値提案・EA・業務改革",
+              "topics": [
+                "it-06"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "i7-4",
+              "title": "データ活用基盤",
+              "topics": [
+                "it-business-systems",
+                "it-07"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "i7-5",
+              "title": "統治・統制・監査",
+              "topics": [
+                "it-governance"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "i7-6",
+              "title": "情報化社会・標準化・社会課題",
+              "topics": [],
+              "status": "対応先要特定"
+            },
+            {
+              "id": "i7-7",
+              "title": "業務処理・経営管理・知識",
+              "topics": [
+                "it-business-systems"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "i7-8",
+              "title": "SCM・CRM・組織間連携",
+              "topics": [
+                "it-business-systems"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "i7-9",
+              "title": "新サービス・プラットフォーム",
+              "topics": [
+                "it-06",
+                "it-07"
+              ],
+              "status": "対応候補・本文要照合"
+            }
+          ]
         },
         {
           "id": "i8",
@@ -1886,7 +4190,26 @@
             "設計図・見積り・開発技法の複合問題"
           ],
           "sourcePage": "19",
-          "status": "初稿対応・細目要監査"
+          "status": "初稿対応・細目要監査",
+          "auditItems": [
+            {
+              "id": "i8-1",
+              "title": "ウォーターフォール・段階開発・アジャイル",
+              "topics": [
+                "it-05"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "i8-2",
+              "title": "要件設計・テスト・移行",
+              "topics": [
+                "it-05",
+                "it-algorithm"
+              ],
+              "status": "対応候補・本文要照合"
+            }
+          ]
         },
         {
           "id": "i9",
@@ -1902,7 +4225,35 @@
             "プロジェクト・サービス管理のケース演習"
           ],
           "sourcePage": "19",
-          "status": "初稿対応・細目要監査"
+          "status": "初稿対応・細目要監査",
+          "auditItems": [
+            {
+              "id": "i9-1",
+              "title": "開発運用計画・体制",
+              "topics": [
+                "it-project"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "i9-2",
+              "title": "サービス・プロジェクト管理",
+              "topics": [
+                "it-project"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "i9-3",
+              "title": "リスク・プライバシー・セキュリティ管理対策",
+              "topics": [
+                "it-04",
+                "it-governance",
+                "it-08"
+              ],
+              "status": "対応候補・本文要照合"
+            }
+          ]
         },
         {
           "id": "i10",
@@ -1916,7 +4267,27 @@
             "品質モデルの版と詳細、定量的価値評価"
           ],
           "sourcePage": "19",
-          "status": "初稿対応・細目要監査"
+          "status": "初稿対応・細目要監査",
+          "auditItems": [
+            {
+              "id": "i10-1",
+              "title": "品質評価",
+              "topics": [
+                "it-performance",
+                "it-procurement"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "i10-2",
+              "title": "価値評価",
+              "topics": [
+                "it-procurement",
+                "it-governance"
+              ],
+              "status": "対応候補・本文要照合"
+            }
+          ]
         },
         {
           "id": "i11",
@@ -1941,6 +4312,35 @@
               ],
               "status": "増補済み・独立監査待ち"
             }
+          ],
+          "auditItems": [
+            {
+              "id": "i11-1",
+              "title": "問題分析・意思決定手法",
+              "topics": [
+                "it-statistics"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "i11-2",
+              "title": "データ理解・収集加工可視化・基盤",
+              "topics": [
+                "it-statistics",
+                "it-07",
+                "it-business-systems"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "i11-3",
+              "title": "確率統計・AI",
+              "topics": [
+                "it-statistics",
+                "it-07"
+              ],
+              "status": "対応候補・本文要照合"
+            }
           ]
         },
         {
@@ -1955,7 +4355,9 @@
             "最新の情報法令・規格・新規出題論点の確認"
           ],
           "sourcePage": "19",
-          "status": "初稿対応・細目要監査"
+          "status": "初稿対応・細目要監査",
+          "openScope": true,
+          "auditItems": []
         }
       ]
     },
@@ -2048,7 +4450,35 @@
             "白書の全図表・統計細目・業種別指標の照合"
           ],
           "sourcePage": "19",
-          "status": "初稿対応・細目要監査"
+          "status": "初稿対応・細目要監査",
+          "auditItems": [
+            {
+              "id": "s1-1",
+              "title": "企業統計・動向・規模比較",
+              "topics": [
+                "sme-01",
+                "sme-02"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "s1-2",
+              "title": "中小企業性業種・産業構造",
+              "topics": [
+                "sme-sector"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "s1-3",
+              "title": "地域社会・地域産業",
+              "topics": [
+                "sme-regional",
+                "sme-international"
+              ],
+              "status": "対応候補・本文要照合"
+            }
+          ]
         },
         {
           "id": "s2",
@@ -2089,6 +4519,111 @@
               ],
               "status": "増補済み・独立監査待ち"
             }
+          ],
+          "auditItems": [
+            {
+              "id": "s2-1",
+              "title": "経営指標・統計・実態",
+              "topics": [
+                "sme-02",
+                "sme-03"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "s2-2",
+              "title": "経営基盤・多様性・戦略・経営者・資源",
+              "topics": [
+                "sme-07",
+                "sme-03"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "s2-3",
+              "title": "ビジネスモデル・集積・商店街・成長",
+              "topics": [
+                "sme-innovation",
+                "sme-international",
+                "sme-regional"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "s2-4",
+              "title": "建設製造卸小売サービス物流宿泊飲食等",
+              "topics": [
+                "sme-sector"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "s2-5",
+              "title": "ベンチャー・受託・小規模",
+              "topics": [
+                "sme-sector",
+                "sme-03"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "s2-6",
+              "title": "環境変化・国際化・供給網",
+              "topics": [
+                "sme-environment",
+                "sme-international"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "s2-7",
+              "title": "金融税制・雇用人材・環境エネルギー",
+              "topics": [
+                "sme-05",
+                "sme-09",
+                "sme-environment"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "s2-8",
+              "title": "取引構造・革新・生産性・設備",
+              "topics": [
+                "sme-transaction",
+                "sme-06",
+                "sme-07"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "s2-9",
+              "title": "IT・サービス化・連携・産学官",
+              "topics": [
+                "sme-07",
+                "sme-innovation"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "s2-10",
+              "title": "承継買収・海外・創業・開廃業・再生",
+              "topics": [
+                "sme-08",
+                "sme-international",
+                "sme-06",
+                "sme-03"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "s2-11",
+              "title": "研究開発・持続可能性・社会責任・ブランド無形資産知財",
+              "topics": [
+                "sme-innovation",
+                "sme-environment"
+              ],
+              "status": "対応候補・本文要照合"
+            }
           ]
         },
         {
@@ -2111,7 +4646,79 @@
             "全制度の対象・上限・率・期限・例外・認定主体を年度別に精査。雇用・人材、税制、分野別施策の詳細"
           ],
           "sourcePage": "20",
-          "status": "初稿対応・細目要監査"
+          "status": "初稿対応・細目要監査",
+          "auditItems": [
+            {
+              "id": "s3-1",
+              "title": "関連法と政策体系",
+              "topics": [
+                "sme-04"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "s3-2",
+              "title": "技術・創業・革新・新事業・知財",
+              "topics": [
+                "sme-06",
+                "sme-innovation"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "s3-3",
+              "title": "雇用・海外・取引官公需",
+              "topics": [
+                "sme-environment",
+                "sme-international",
+                "sme-transaction"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "s3-4",
+              "title": "経営安定・再生・小規模支援",
+              "topics": [
+                "sme-08",
+                "sme-03"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "s3-5",
+              "title": "金融・保証",
+              "topics": [
+                "sme-05"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "s3-6",
+              "title": "税制・承継",
+              "topics": [
+                "sme-09",
+                "sme-08"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "s3-7",
+              "title": "商業地域・分野別支援",
+              "topics": [
+                "sme-regional"
+              ],
+              "status": "対応候補・本文要照合"
+            },
+            {
+              "id": "s3-8",
+              "title": "実施体制・相談・施策活用",
+              "topics": [
+                "sme-support",
+                "sme-04"
+              ],
+              "status": "対応候補・本文要照合"
+            }
+          ]
         },
         {
           "id": "s4",
@@ -2124,7 +4731,18 @@
             "個別法の制定・改正・施行日と政策評価の詳細"
           ],
           "sourcePage": "20",
-          "status": "初稿対応・細目要監査"
+          "status": "初稿対応・細目要監査",
+          "auditItems": [
+            {
+              "id": "s4-1",
+              "title": "政策の役割・歴史的転換",
+              "topics": [
+                "sme-policy-history",
+                "sme-04"
+              ],
+              "status": "対応候補・本文要照合"
+            }
+          ]
         },
         {
           "id": "s5",
@@ -2139,7 +4757,9 @@
             "年度新規論点・未分類の公式出題を確認"
           ],
           "sourcePage": "20",
-          "status": "初稿対応・細目要監査"
+          "status": "初稿対応・細目要監査",
+          "openScope": true,
+          "auditItems": []
         }
       ]
     },

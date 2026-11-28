@@ -253,3 +253,11 @@ run('state=blank();page="study";selected="econ";render()');assert(dom.innerHTML.
 run('selected="econ-02";render()');assert(dom.innerHTML.includes('価格変化を三つの消費点で理解する'));
 assert.equal((2/98*365/20*100).toFixed(2),'37.24');assert.equal((0.04*0.2**2+0.01*0.8**2).toFixed(3),'0.008');assert.equal(0.5*10*10*2,100);
 console.log('PASS: detail scope links, explicit open scope, revision overlay, prior IDs and calculations');
+
+const scopeGroups=curriculum.subjects.filter(s=>s.stage===1).flatMap(s=>s.officialGroups);
+assert.equal(scopeGroups.filter(g=>g.openScope).length,11);
+const audit=scopeGroups.flatMap(g=>g.auditItems);
+assert.equal(audit.length,296);assert.equal(audit.filter(x=>!x.topics.length).length,5);assert.equal(new Set(audit.map(x=>x.id)).size,audit.length);
+for(const s of curriculum.subjects.filter(s=>s.stage===1))for(const g of s.officialGroups){assert(g.openScope||g.auditItems.length);for(const x of g.auditItems)assert(x.topics.every(id=>s.topics.some(t=>t.id===id)&&lessons[id]));}
+run('state=blank();page="study";selected="econ";render()');assert(dom.innerHTML.includes('細目別チェックリスト'));assert(dom.innerHTML.includes('対応先要特定'));assert(dom.innerHTML.includes('開放範囲：'));
+console.log('PASS: granular audit inventory and open-scope labels');
