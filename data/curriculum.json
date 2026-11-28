@@ -1,6 +1,6 @@
 {
-  "version": "draft-2026-11-27-r3",
-  "status": "2026年度公式案内の再照合による暫定索引。初稿と全出題細目の品質監査・過去問対応は未完了",
+  "version": "draft-2026-11-28-r4",
+  "status": "2026年度公式案内に基づく暫定索引。経済・財務・企業経営理論は項目群の対応付けを実施。初稿の深さ、全出題細目、過去問との照合は未完了。",
   "subjects": [
     {
       "id": "econ",
@@ -576,6 +576,347 @@
         {
           "id": "mgmt-channel",
           "title": "流通チャネル・デジタル流通"
+        },
+        {
+          "id": "mgmt-labor-employment",
+          "title": "労働契約・非正規雇用・派遣・労使関係の詳細"
+        },
+        {
+          "id": "mgmt-labor-care",
+          "title": "育児介護・均等法・ハラスメント対策"
+        },
+        {
+          "id": "mgmt-labor-safety",
+          "title": "労働安全衛生・労働保険・社会保険"
+        }
+      ],
+      "officialGroups": [
+        {
+          "id": "m1",
+          "title": "戦略の意思決定と環境分析",
+          "topics": [
+            "mgmt-01"
+          ],
+          "gaps": [
+            "戦略策定の事例比較・動的能力の詳細"
+          ],
+          "sourcePage": "13",
+          "status": "対応付け済み・細目要監査"
+        },
+        {
+          "id": "m2",
+          "title": "企業戦略と成長・事業の範囲",
+          "topics": [
+            "mgmt-03"
+          ],
+          "gaps": [
+            "経験曲線の数値演習・事業ポートフォリオの限界"
+          ],
+          "sourcePage": "13",
+          "status": "対応付け済み・細目要監査"
+        },
+        {
+          "id": "m3",
+          "title": "競争戦略・業界構造",
+          "topics": [
+            "mgmt-02",
+            "mgmt-network"
+          ],
+          "gaps": [
+            "プラットフォーム・業界標準の詳細"
+          ],
+          "sourcePage": "13",
+          "status": "対応付け済み・細目要監査"
+        },
+        {
+          "id": "m4",
+          "title": "技術経営・新事業",
+          "topics": [
+            "mgmt-04",
+            "mgmt-learning"
+          ],
+          "gaps": [
+            "技術ロードマップ・ビジネスモデル・起業家の判断"
+          ],
+          "sourcePage": "13",
+          "status": "対応付け済み・細目要監査"
+        },
+        {
+          "id": "m5",
+          "title": "国際戦略",
+          "topics": [
+            "mgmt-international"
+          ],
+          "gaps": [
+            "海外子会社の役割類型と統治の複合問題"
+          ],
+          "sourcePage": "13",
+          "status": "対応付け済み・細目要監査"
+        },
+        {
+          "id": "m6",
+          "title": "社会的責任と統治",
+          "topics": [
+            "mgmt-csr"
+          ],
+          "gaps": [
+            "企業監視・倫理の具体事例・制度の年度確認"
+          ],
+          "sourcePage": "14",
+          "status": "対応付け済み・細目要監査"
+        },
+        {
+          "id": "m7",
+          "title": "家族企業と承継",
+          "topics": [
+            "mgmt-family"
+          ],
+          "gaps": [
+            "ファミリーガバナンス・承継の法務と政策との対応"
+          ],
+          "sourcePage": "14",
+          "status": "対応付け済み・細目要監査"
+        },
+        {
+          "id": "m8",
+          "title": "組織の目的・分業と調整",
+          "topics": [
+            "mgmt-05"
+          ],
+          "gaps": [
+            "調整メカニズムの比較・権限と責任"
+          ],
+          "sourcePage": "14",
+          "status": "対応付け済み・細目要監査"
+        },
+        {
+          "id": "m9",
+          "title": "組織構造の形態",
+          "topics": [
+            "mgmt-05",
+            "mgmt-network"
+          ],
+          "gaps": [
+            "持株会社・ネットワーク組織の詳細比較"
+          ],
+          "sourcePage": "14",
+          "status": "対応付け済み・細目要監査"
+        },
+        {
+          "id": "m10",
+          "title": "組織文化",
+          "topics": [
+            "mgmt-culture"
+          ],
+          "gaps": [
+            "文化と戦略の適合・サブカルチャーの事例演習"
+          ],
+          "sourcePage": "14",
+          "status": "対応付け済み・細目要監査"
+        },
+        {
+          "id": "m11",
+          "title": "個人の意思決定・動機",
+          "topics": [
+            "mgmt-06"
+          ],
+          "gaps": [
+            "公平理論・認知バイアス・職務特性モデルの詳細"
+          ],
+          "sourcePage": "14",
+          "status": "対応付け済み・細目要監査"
+        },
+        {
+          "id": "m12",
+          "title": "人間関係・集団",
+          "topics": [
+            "mgmt-leadership"
+          ],
+          "gaps": [
+            "対立管理の五類型・小集団活動の事例"
+          ],
+          "sourcePage": "14",
+          "status": "対応付け済み・細目要監査"
+        },
+        {
+          "id": "m13",
+          "title": "組織間関係",
+          "topics": [
+            "mgmt-network"
+          ],
+          "gaps": [
+            "資源依存・制度理論の複合演習"
+          ],
+          "sourcePage": "14",
+          "status": "対応付け済み・細目要監査"
+        },
+        {
+          "id": "m14",
+          "title": "組織変革と成長",
+          "topics": [
+            "mgmt-culture",
+            "mgmt-learning"
+          ],
+          "gaps": [
+            "成長段階と組織構造を比較する長文問題"
+          ],
+          "sourcePage": "14",
+          "status": "対応付け済み・細目要監査"
+        },
+        {
+          "id": "m15",
+          "title": "人的資源管理・労働法規",
+          "topics": [
+            "mgmt-07",
+            "mgmt-08",
+            "mgmt-labor-employment",
+            "mgmt-labor-care",
+            "mgmt-labor-safety"
+          ],
+          "gaps": [
+            "年度別法令・例外・数値の全件確認",
+            "賃金体系・昇進・資格制度と労働条件管理の詳細"
+          ],
+          "sourcePage": "14",
+          "status": "対応付け済み・細目要監査"
+        },
+        {
+          "id": "m16",
+          "title": "マーケティングの基本概念",
+          "topics": [
+            "mgmt-09",
+            "mgmt-10"
+          ],
+          "gaps": [
+            "マーケティング概念の歴史的変遷"
+          ],
+          "sourcePage": "14",
+          "status": "対応付け済み・細目要監査"
+        },
+        {
+          "id": "m17",
+          "title": "マーケティング計画・市場戦略",
+          "topics": [
+            "mgmt-09",
+            "mgmt-10",
+            "mgmt-01"
+          ],
+          "gaps": [
+            "市場地位とマーケティング施策の複合演習"
+          ],
+          "sourcePage": "14",
+          "status": "対応付け済み・細目要監査"
+        },
+        {
+          "id": "m18",
+          "title": "マーケティング調査",
+          "topics": [
+            "mgmt-research"
+          ],
+          "gaps": [
+            "標本誤差・実験デザイン・分析結果の読解"
+          ],
+          "sourcePage": "14",
+          "status": "対応付け済み・細目要監査"
+        },
+        {
+          "id": "m19",
+          "title": "分野別マーケティング",
+          "topics": [
+            "mgmt-10",
+            "mgmt-11",
+            "mgmt-international"
+          ],
+          "gaps": [
+            "サービス品質・生産財・デジタル分析の実践"
+          ],
+          "sourcePage": "14",
+          "status": "対応付け済み・細目要監査"
+        },
+        {
+          "id": "m20",
+          "title": "製品管理・新製品開発",
+          "topics": [
+            "mgmt-brand",
+            "mgmt-03"
+          ],
+          "gaps": [
+            "普及曲線・製品入替え・新製品の定量評価"
+          ],
+          "sourcePage": "15",
+          "status": "対応付け済み・細目要監査"
+        },
+        {
+          "id": "m21",
+          "title": "ブランド管理",
+          "topics": [
+            "mgmt-brand"
+          ],
+          "gaps": [
+            "ブランド構築・維持のモデル詳細"
+          ],
+          "sourcePage": "15",
+          "status": "対応付け済み・細目要監査"
+        },
+        {
+          "id": "m22",
+          "title": "消費者行動",
+          "topics": [
+            "mgmt-11"
+          ],
+          "gaps": [
+            "認知・感情・関与の各モデル比較"
+          ],
+          "sourcePage": "15",
+          "status": "対応付け済み・細目要監査"
+        },
+        {
+          "id": "m23",
+          "title": "価格設定",
+          "topics": [
+            "mgmt-pricing"
+          ],
+          "gaps": [
+            "価格心理の実験・複合価格計算"
+          ],
+          "sourcePage": "15",
+          "status": "対応付け済み・細目要監査"
+        },
+        {
+          "id": "m24",
+          "title": "広告・コミュニケーション",
+          "topics": [
+            "mgmt-communication"
+          ],
+          "gaps": [
+            "広告表現規制の年度確認・効果測定の複合演習"
+          ],
+          "sourcePage": "15",
+          "status": "対応付け済み・細目要監査"
+        },
+        {
+          "id": "m25",
+          "title": "販売促進・人的販売・広報",
+          "topics": [
+            "mgmt-communication"
+          ],
+          "gaps": [
+            "販売員管理・関係法令・販促の実践"
+          ],
+          "sourcePage": "15",
+          "status": "対応付け済み・細目要監査"
+        },
+        {
+          "id": "m26",
+          "title": "流通チャネル",
+          "topics": [
+            "mgmt-channel"
+          ],
+          "gaps": [
+            "チャネル管理とデジタル統合の複合演習"
+          ],
+          "sourcePage": "15",
+          "status": "対応付け済み・細目要監査"
         }
       ]
     },
