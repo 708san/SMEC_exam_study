@@ -23,7 +23,9 @@ assert(l.takeaway.length>0,id+' summary');
 for(const [id,l] of Object.entries(lessons))for(const source of l.sources??[]){assert(source.url.startsWith('https://'));assert(/^\d{4}-\d{2}-\d{2}$/.test(source.checked));assert(source.name.length>0)}
 const visit=(id,path=[])=>{assert(!path.includes(id),'cyclic prerequisite '+[...path,id].join(' -> '));for(const p of lessons[id]?.prerequisites??[])if(lessons[p])visit(p,[...path,id])};
 for(const id of Object.keys(lessons))visit(id);
-assert.equal(cases.length,4);
+assert.equal(cases.length,8);
+assert.equal(new Set(cases.map(c=>c.id)).size,8);
+assert.equal(new Set(cases.flatMap(c=>c.questions.map(q=>q.id))).size,32);
 assert.equal(new Set(cases.map(c=>c.subject)).size,4);
 for(const c of cases){assert(curriculum.subjects.some(s=>s.id===c.subject&&s.stage===2));assert.equal(c.questions.reduce((n,q)=>n+q.points,0),100);for(const q of c.questions){assert(Array.from(q.model).length<=q.limit);assert.equal(q.rubric.reduce((n,r)=>n+r[1],0),q.points);assert(q.topics.every(id=>topics.some(t=>t.id===id)))}}
 const dom={innerHTML:'',textContent:''}, store=new Map(), events={};
@@ -237,3 +239,9 @@ assert.equal(Object.values(lessons).reduce((n,l)=>n+l.sections.length,0),1252);
 assert(Math.abs(-200+[1,2,3].reduce((s,t)=>s+80/1.05**t,0)-17.86)<0.01);
 assert(Math.abs(-200+[1,2,3].reduce((s,t)=>s+65/1.05**t,0)+22.99)<0.01);
 console.log('PASS: case I–IV curriculum and writing drills');
+
+for(const c of cases.filter(c=>c.kind==='integrated')){assert.equal(c.minutes,80);assert.equal(c.questions.length,5);assert(c.passage.length>=800);for(const q of c.questions){assert(q.rationale);assert(q.alternatives.length>=1);assert(q.alternatives.every(m=>Array.from(m).length<=q.limit));assert(q.rubric.every(r=>r[1]>0));assert(q.topics.every(id=>lessons[id]));}run('state=blank();page="cases";activeCase='+JSON.stringify(c.id)+';caseResult=null;render()');assert(!dom.innerHTML.includes(c.questions[0].model));assert(!dom.innerHTML.includes(c.questions[0].alternatives[0]));const answers=Object.fromEntries(c.questions.map(q=>[q.id,q.model]));const checked=c.questions.flatMap((q,i)=>q.rubric.map((_,j)=>i+'-'+j));assert.equal(run('selfGrade(cases.find(c=>c.id==='+JSON.stringify(c.id)+'),'+JSON.stringify(answers)+','+JSON.stringify(checked)+')'),100);run('state.caseHistory.push({caseId:'+JSON.stringify(c.id)+',date:day(),answers:'+JSON.stringify(answers)+',score:null,checked:[]});caseResult=0;render()');assert(dom.innerHTML.includes('別解例 1'));assert(dom.innerHTML.includes('解答の考え方・注意点'));}
+assert.equal(cases.filter(c=>c.kind==='integrated').length,4);
+assert.equal((-850+270*(.952381+.907029+.863838)+320*.822702).toFixed(2),'148.54');
+assert.equal(500+420-570-80-100-800-50,-680);
+console.log('PASS: integrated cases, model limits, hidden alternatives, grading and finance checks');
