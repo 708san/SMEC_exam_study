@@ -81,7 +81,7 @@ try{
  await page.locator('button[data-topic="it-performance"]').last().click();
  await page.locator('[data-diagram="it-performance"]').getByText('81%',{exact:true}).waitFor();
  await page.locator('[data-diagram="it-performance"] input[data-param="0"]').fill('100');
- await page.locator('[data-diagram="it-performance"]').getByText('100%',{exact:true}).waitFor();
+ await page.locator('[data-diagram="it-performance"] .card').filter({hasText:'並列稼働率'}).locator('.big').filter({hasText:/^100%$/}).waitFor();
  await page.locator('button[data-subject="it"]').click();
  await page.locator('button[data-topic="it-project"]').last().click();
  await page.locator('[data-diagram="it-project"]').getByText('-15万円',{exact:true}).waitFor();
