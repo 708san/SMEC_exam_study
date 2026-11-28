@@ -201,7 +201,7 @@ assert.equal(itSubject.officialGroups.length,12);
 assert.equal(itSubject.topics.length,16);
 assert(itSubject.topics.every(t=>lessons[t.id]),'missing IT lesson');
 const itQs=itSubject.topics.flatMap(t=>lessons[t.id].questions);
-assert.equal(itQs.length,112);
+assert.equal(itQs.length,116);
 const itPositions=[0,1,2,3].map(i=>itQs.filter(q=>q.answer===i).length);
 assert(Math.max(...itPositions)-Math.min(...itPositions)<=1,'IT answer position bias');
 for(const t of itSubject.topics){const l=lessons[t.id];assert(l.sections.length>=8,t.id+' depth');assert(l.questions.length>=6,t.id+' exercises');for(const q of l.questions){assert.equal(new Set(q.options).size,q.options.length,q.id+' duplicate options');assert(q.explanations.every(e=>e.trim()),q.id+' missing rationale')}}
@@ -219,8 +219,8 @@ assert.equal(sme.officialGroups.length,5);
 assert(sme.topics.every(t=>lessons[t.id]));
 assert(curriculum.subjects.filter(s=>s.stage===1).every(s=>s.topics.every(t=>lessons[t.id])));
 const smeQs=sme.topics.flatMap(t=>lessons[t.id].questions);
-assert.equal(smeQs.length,80);
-for(const i of [0,1,2,3])assert.equal(smeQs.filter(q=>q.answer===i).length,20);
+assert.equal(smeQs.length,84);
+for(const i of [0,1,2,3])assert.equal(smeQs.filter(q=>q.answer===i).length,21);
 assert(new Set(sme.topics.map(t=>lessons[t.id].questions.slice(0,4).map(q=>q.answer).join(','))).size>=8,'predictable correct positions');
 for(const t of sme.topics){const l=lessons[t.id];assert(l.sections.length>=8);assert(l.sources.length>=1);assert(l.questions.length>=4);for(const q of l.questions){assert.equal(new Set(q.options).size,4);assert(q.explanations.every(e=>e.trim()))}}
 run('state=blank();page="study";selected="sme";render()');
@@ -234,8 +234,8 @@ assert(!Object.keys(secondLessons).some(id=>Object.hasOwn(baseLessons,id)||Objec
 for(const sub of curriculum.subjects.filter(s=>s.stage===2)){assert(sub.topics.every(t=>lessons[t.id]));const qs=sub.topics.flatMap(t=>lessons[t.id].questions);for(const i of [0,1,2,3])assert.equal(qs.filter(q=>q.answer===i).length,7);for(const t of sub.topics){const l=lessons[t.id];assert(l.writtenDrill.prompt&&l.writtenDrill.model&&l.writtenDrill.review);assert(l.sources.length>=3);for(const q of l.questions)assert.equal(new Set(q.options).size,4);run('state=blank();page="study";selected='+JSON.stringify(t.id)+';render()');assert(dom.innerHTML.includes('記述ミニ演習'));assert(dom.innerHTML.includes('解答例と見直し観点'))}}
 assert.equal(Object.keys(secondLessons).length,28);
 assert(topics.every(t=>lessons[t.id]));
-assert.equal(questions.length,913);
-assert.equal(Object.values(lessons).reduce((n,l)=>n+l.sections.length,0),1302);
+assert.equal(questions.length,929);
+assert.equal(Object.values(lessons).reduce((n,l)=>n+l.sections.length,0),1313);
 assert(Math.abs(-200+[1,2,3].reduce((s,t)=>s+80/1.05**t,0)-17.86)<0.01);
 assert(Math.abs(-200+[1,2,3].reduce((s,t)=>s+65/1.05**t,0)+22.99)<0.01);
 console.log('PASS: case I–IV curriculum and writing drills');
@@ -247,7 +247,7 @@ assert.equal(500+420-570-80-100-800-50,-680);
 console.log('PASS: integrated cases, model limits, hidden alternatives, grading and finance checks');
 
 assert.equal(curriculum.subjects.filter(s=>s.stage===1).reduce((n,s)=>n+s.officialGroups.length,0),84);
-for(const [id,l] of Object.entries(enhancements)){assert(originalLessons[id]);assert.equal(l.revision,originalLessons[id].revision+1);assert.deepEqual(l.questions.slice(0,originalLessons[id].questions.length),originalLessons[id].questions);assert.deepEqual(l.sections.slice(0,originalLessons[id].sections.length),originalLessons[id].sections);assert.equal(run('lessons['+JSON.stringify(id)+'].revision'),l.revision);}
+for(const [id,l] of Object.entries(enhancements)){assert(originalLessons[id]);assert(l.revision>originalLessons[id].revision);assert.deepEqual(l.questions.slice(0,originalLessons[id].questions.length),originalLessons[id].questions);assert.deepEqual(l.sections.slice(0,originalLessons[id].sections.length),originalLessons[id].sections);assert.equal(run('lessons['+JSON.stringify(id)+'].revision'),l.revision);}
 for(const sub of curriculum.subjects.filter(s=>s.stage===1))for(const g of sub.officialGroups)for(const x of g.detailChecks??[]){assert(g.topics.includes(x.topic));assert(x.sections.every(h=>lessons[x.topic].sections.some(s=>s[0]===h)));assert(x.status.includes('独立監査待ち'));}
 run('state=blank();page="study";selected="econ";render()');assert(dom.innerHTML.includes('今回の細目増補・対応根拠'));assert(dom.innerHTML.includes('判定対象外'));
 run('selected="econ-02";render()');assert(dom.innerHTML.includes('価格変化を三つの消費点で理解する'));
@@ -257,7 +257,11 @@ console.log('PASS: detail scope links, explicit open scope, revision overlay, pr
 const scopeGroups=curriculum.subjects.filter(s=>s.stage===1).flatMap(s=>s.officialGroups);
 assert.equal(scopeGroups.filter(g=>g.openScope).length,11);
 const audit=scopeGroups.flatMap(g=>g.auditItems);
-assert.equal(audit.length,296);assert.equal(audit.filter(x=>!x.topics.length).length,5);assert.equal(new Set(audit.map(x=>x.id)).size,audit.length);
+assert.equal(audit.length,296);assert.equal(audit.filter(x=>!x.topics.length).length,0);assert.equal(new Set(audit.map(x=>x.id)).size,audit.length);
 for(const s of curriculum.subjects.filter(s=>s.stage===1))for(const g of s.officialGroups){assert(g.openScope||g.auditItems.length);for(const x of g.auditItems)assert(x.topics.every(id=>s.topics.some(t=>t.id===id)&&lessons[id]));}
-run('state=blank();page="study";selected="econ";render()');assert(dom.innerHTML.includes('細目別チェックリスト'));assert(dom.innerHTML.includes('対応先要特定'));assert(dom.innerHTML.includes('開放範囲：'));
+run('state=blank();page="study";selected="econ";render()');assert(dom.innerHTML.includes('細目別チェックリスト'));assert(dom.innerHTML.includes('関連節を増補・全範囲の本文要監査'));assert(dom.innerHTML.includes('開放範囲：'));
 console.log('PASS: granular audit inventory and open-scope labels');
+
+for(const [id,v,expected] of [['econ-trade',10,'関税収入 400、死荷重 100'],['econ-trade',0,'関税収入 0、死荷重 0'],['econ-trade',30,'関税収入 0、死荷重 900'],['econ-02',5,'代替効果（X）：2.49'],['econ-02',10,'代替効果（X）：0']])assert(run('diagramContent('+JSON.stringify(id)+','+v+')').includes(expected),id+' '+expected);
+assert.equal(800*.15+200*.232,166.4);assert.equal((600-500)*.04,4);
+console.log('PASS: previously unmapped candidate links and economic diagrams');

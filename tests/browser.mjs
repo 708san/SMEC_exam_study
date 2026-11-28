@@ -18,6 +18,16 @@ try{
  await page.getByRole('heading',{name:'学習ダッシュボード'}).waitFor();
  const readState=()=>page.evaluate(()=>JSON.parse(localStorage.getItem('smec-study-v1')||'{}'));
  await page.locator('nav [data-page="study"]').click();
+ await page.locator('[data-subject="econ"]').click();
+ await page.getByRole('heading',{name:'公式出題項目との対応'}).waitFor();
+ await page.locator('summary').filter({hasText:'国際経済'}).click();
+ await page.locator('details[open]').getByRole('heading',{name:'細目別チェックリスト'}).waitFor();
+ await page.locator('button[data-topic="econ-trade"]').last().click();
+ await page.locator('[data-diagram="econ-trade"]').getByText(/関税収入 400、死荷重 100/).waitFor();
+ await page.locator('[data-diagram="econ-trade"] input[data-param="0"]').fill('30');
+ await page.locator('[data-diagram="econ-trade"]').getByText(/関税収入 0、死荷重 900/).waitFor();
+ assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+2),true,'tariff graph mobile overflow');
+ await page.locator('nav [data-page="study"]').click();
  await page.locator('[data-subject="fin"]').click();
  await page.getByRole('heading',{name:'公式出題項目との対応'}).waitFor();
  await page.locator('button[data-topic="fin-cvp"]').last().click();
