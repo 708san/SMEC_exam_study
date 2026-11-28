@@ -2,7 +2,7 @@ import {readFileSync} from 'node:fs';
 import assert from 'node:assert/strict';
 import vm from 'node:vm';
 const read=p=>readFileSync(new URL('../'+p,import.meta.url),'utf8');
-const curriculum=JSON.parse(read('data/curriculum.json')), baseLessons=JSON.parse(read('data/lessons.json')), smeLessons=JSON.parse(read('data/lessons-sme.json')), secondLessons=JSON.parse(read('data/lessons-second.json')), lessons={...baseLessons,...smeLessons,...secondLessons};
+const curriculum=JSON.parse(read('data/curriculum.json')), baseLessons=JSON.parse(read('data/lessons.json')), smeLessons=JSON.parse(read('data/lessons-sme.json')), secondLessons=JSON.parse(read('data/lessons-second.json')), enhancements=JSON.parse(read('data/lesson-enhancements.json')), originalLessons={...baseLessons,...smeLessons,...secondLessons}, lessons={...originalLessons,...enhancements};
 assert(!Object.keys(smeLessons).some(id=>Object.hasOwn(baseLessons,id)),'duplicate split lesson ID');
 const cases=JSON.parse(read('data/cases.json'));
 const topics=curriculum.subjects.flatMap(s=>s.topics), questions=Object.values(lessons).flatMap(l=>l.questions);
@@ -29,7 +29,7 @@ assert.equal(new Set(cases.flatMap(c=>c.questions.map(q=>q.id))).size,32);
 assert.equal(new Set(cases.map(c=>c.subject)).size,4);
 for(const c of cases){assert(curriculum.subjects.some(s=>s.id===c.subject&&s.stage===2));assert.equal(c.questions.reduce((n,q)=>n+q.points,0),100);for(const q of c.questions){assert(Array.from(q.model).length<=q.limit);assert.equal(q.rubric.reduce((n,r)=>n+r[1],0),q.points);assert(q.topics.every(id=>topics.some(t=>t.id===id)))}}
 const dom={innerHTML:'',textContent:''}, store=new Map(), events={};
-const context=vm.createContext({document:{querySelector:()=>dom,querySelectorAll:()=>[],addEventListener:(n,fn)=>events[n]=fn},localStorage:{getItem:k=>store.get(k),setItem:(k,v)=>store.set(k,v)},navigator:{},window:{scrollTo(){}},fetch:async p=>({ok:true,json:async()=>p.includes('curriculum')?curriculum:p.includes('cases')?cases:p.includes('lessons-sme')?smeLessons:p.includes('lessons-second')?secondLessons:baseLessons}),alert:()=>{},console});
+const context=vm.createContext({document:{querySelector:()=>dom,querySelectorAll:()=>[],addEventListener:(n,fn)=>events[n]=fn},localStorage:{getItem:k=>store.get(k),setItem:(k,v)=>store.set(k,v)},navigator:{},window:{scrollTo(){}},fetch:async p=>({ok:true,json:async()=>p.includes('curriculum')?curriculum:p.includes('cases')?cases:p.includes('lessons-sme')?smeLessons:p.includes('lessons-second')?secondLessons:p.includes('lesson-enhancements')?enhancements:baseLessons}),alert:()=>{},console});
 await vm.runInContext(read('app.js').replace(/init\(\);\s*$/,'init();'),context);
 const run=s=>vm.runInContext(s,context);
 assert(dom.innerHTML.includes('学習ダッシュボード'));
@@ -125,9 +125,9 @@ assert(!dom.innerHTML.includes('<script>bad</script>'));
 assert.throws(()=>run('validate({...blank(),caseHistory:[{caseId:"x",score:101}]})'));
 assert.throws(()=>run('validate({...blank(),examDrafts:{x:{q0:"bad"}}})'));
 assert.equal(run('Object.keys(validate((()=>{const s=blank();delete s.examDrafts;delete s.caseDrafts;delete s.caseHistory;return s})()).caseDrafts).length'),0);
-assert.equal(curriculum.subjects.find(s=>s.id==='econ').officialGroups.length,8);
-assert.equal(curriculum.subjects.find(s=>s.id==='fin').officialGroups.length,11);
-assert.equal(curriculum.subjects.find(s=>s.id==='mgmt').officialGroups.length,26);
+assert.equal(curriculum.subjects.find(s=>s.id==='econ').officialGroups.length,9);
+assert.equal(curriculum.subjects.find(s=>s.id==='fin').officialGroups.length,12);
+assert.equal(curriculum.subjects.find(s=>s.id==='mgmt').officialGroups.length,29);
 const mgmtTopics=curriculum.subjects.find(s=>s.id==='mgmt').topics;
 assert(mgmtTopics.every(t=>lessons[t.id]),'management topic missing lesson');
 const mgmtQs=mgmtTopics.flatMap(t=>lessons[t.id].questions);
@@ -201,7 +201,7 @@ assert.equal(itSubject.officialGroups.length,12);
 assert.equal(itSubject.topics.length,16);
 assert(itSubject.topics.every(t=>lessons[t.id]),'missing IT lesson');
 const itQs=itSubject.topics.flatMap(t=>lessons[t.id].questions);
-assert.equal(itQs.length,104);
+assert.equal(itQs.length,112);
 const itPositions=[0,1,2,3].map(i=>itQs.filter(q=>q.answer===i).length);
 assert(Math.max(...itPositions)-Math.min(...itPositions)<=1,'IT answer position bias');
 for(const t of itSubject.topics){const l=lessons[t.id];assert(l.sections.length>=8,t.id+' depth');assert(l.questions.length>=6,t.id+' exercises');for(const q of l.questions){assert.equal(new Set(q.options).size,q.options.length,q.id+' duplicate options');assert(q.explanations.every(e=>e.trim()),q.id+' missing rationale')}}
@@ -219,8 +219,8 @@ assert.equal(sme.officialGroups.length,5);
 assert(sme.topics.every(t=>lessons[t.id]));
 assert(curriculum.subjects.filter(s=>s.stage===1).every(s=>s.topics.every(t=>lessons[t.id])));
 const smeQs=sme.topics.flatMap(t=>lessons[t.id].questions);
-assert.equal(smeQs.length,76);
-for(const i of [0,1,2,3])assert.equal(smeQs.filter(q=>q.answer===i).length,19);
+assert.equal(smeQs.length,80);
+for(const i of [0,1,2,3])assert.equal(smeQs.filter(q=>q.answer===i).length,20);
 assert(new Set(sme.topics.map(t=>lessons[t.id].questions.slice(0,4).map(q=>q.answer).join(','))).size>=8,'predictable correct positions');
 for(const t of sme.topics){const l=lessons[t.id];assert(l.sections.length>=8);assert(l.sources.length>=1);assert(l.questions.length>=4);for(const q of l.questions){assert.equal(new Set(q.options).size,4);assert(q.explanations.every(e=>e.trim()))}}
 run('state=blank();page="study";selected="sme";render()');
@@ -234,8 +234,8 @@ assert(!Object.keys(secondLessons).some(id=>Object.hasOwn(baseLessons,id)||Objec
 for(const sub of curriculum.subjects.filter(s=>s.stage===2)){assert(sub.topics.every(t=>lessons[t.id]));const qs=sub.topics.flatMap(t=>lessons[t.id].questions);for(const i of [0,1,2,3])assert.equal(qs.filter(q=>q.answer===i).length,7);for(const t of sub.topics){const l=lessons[t.id];assert(l.writtenDrill.prompt&&l.writtenDrill.model&&l.writtenDrill.review);assert(l.sources.length>=3);for(const q of l.questions)assert.equal(new Set(q.options).size,4);run('state=blank();page="study";selected='+JSON.stringify(t.id)+';render()');assert(dom.innerHTML.includes('記述ミニ演習'));assert(dom.innerHTML.includes('解答例と見直し観点'))}}
 assert.equal(Object.keys(secondLessons).length,28);
 assert(topics.every(t=>lessons[t.id]));
-assert.equal(questions.length,863);
-assert.equal(Object.values(lessons).reduce((n,l)=>n+l.sections.length,0),1252);
+assert.equal(questions.length,913);
+assert.equal(Object.values(lessons).reduce((n,l)=>n+l.sections.length,0),1302);
 assert(Math.abs(-200+[1,2,3].reduce((s,t)=>s+80/1.05**t,0)-17.86)<0.01);
 assert(Math.abs(-200+[1,2,3].reduce((s,t)=>s+65/1.05**t,0)+22.99)<0.01);
 console.log('PASS: case I–IV curriculum and writing drills');
@@ -245,3 +245,11 @@ assert.equal(cases.filter(c=>c.kind==='integrated').length,4);
 assert.equal((-850+270*(.952381+.907029+.863838)+320*.822702).toFixed(2),'148.54');
 assert.equal(500+420-570-80-100-800-50,-680);
 console.log('PASS: integrated cases, model limits, hidden alternatives, grading and finance checks');
+
+assert.equal(curriculum.subjects.filter(s=>s.stage===1).reduce((n,s)=>n+s.officialGroups.length,0),84);
+for(const [id,l] of Object.entries(enhancements)){assert(originalLessons[id]);assert.equal(l.revision,originalLessons[id].revision+1);assert.deepEqual(l.questions.slice(0,originalLessons[id].questions.length),originalLessons[id].questions);assert.deepEqual(l.sections.slice(0,originalLessons[id].sections.length),originalLessons[id].sections);assert.equal(run('lessons['+JSON.stringify(id)+'].revision'),l.revision);}
+for(const sub of curriculum.subjects.filter(s=>s.stage===1))for(const g of sub.officialGroups)for(const x of g.detailChecks??[]){assert(g.topics.includes(x.topic));assert(x.sections.every(h=>lessons[x.topic].sections.some(s=>s[0]===h)));assert(x.status.includes('独立監査待ち'));}
+run('state=blank();page="study";selected="econ";render()');assert(dom.innerHTML.includes('今回の細目増補・対応根拠'));assert(dom.innerHTML.includes('判定対象外'));
+run('selected="econ-02";render()');assert(dom.innerHTML.includes('価格変化を三つの消費点で理解する'));
+assert.equal((2/98*365/20*100).toFixed(2),'37.24');assert.equal((0.04*0.2**2+0.01*0.8**2).toFixed(3),'0.008');assert.equal(0.5*10*10*2,100);
+console.log('PASS: detail scope links, explicit open scope, revision overlay, prior IDs and calculations');
