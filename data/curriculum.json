@@ -1,6 +1,6 @@
 {
-  "version": "draft-2026-11-28-r5",
-  "status": "2026年度公式案内に基づく暫定索引。経済・財務・企業経営理論・運営管理は項目群の対応付けを実施。全細目の深さ、過年度問題、独立内容監査は未完了。",
+  "version": "draft-2026-11-28-r6",
+  "status": "2026年度公式案内に基づく暫定索引。経済・財務・企業経営理論・運営管理・経営法務は項目群の対応付けを実施。全細目・過年度問題・独立内容監査は未完了。",
   "subjects": [
     {
       "id": "econ",
@@ -1255,6 +1255,123 @@
         {
           "id": "law-consumer",
           "title": "消費者保護・取引契約"
+        },
+        {
+          "id": "law-property",
+          "title": "物権・債権・担保・債権譲渡"
+        },
+        {
+          "id": "law-international-contract",
+          "title": "国際取引・英文契約・紛争解決"
+        }
+      ],
+      "officialGroups": [
+        {
+          "id": "l1",
+          "title": "事業開始・会社設立・倒産",
+          "topics": [
+            "law-startup",
+            "law-02",
+            "law-05",
+            "law-09",
+            "law-insolvency"
+          ],
+          "gaps": [
+            "組合の設立・登記の類型別詳細",
+            "税務届出・評価償却方法の全期限",
+            "再編・倒産の決議要件と債権者保護の詳細"
+          ],
+          "sourcePage": "17",
+          "status": "初稿対応・細目要監査"
+        },
+        {
+          "id": "l2",
+          "title": "知的財産権",
+          "topics": [
+            "law-06",
+            "law-07",
+            "law-license",
+            "law-international-ip"
+          ],
+          "gaps": [
+            "特許等の例外・職務発明・審判の詳細",
+            "著作隣接権の主体別期間・権利制限",
+            "国際登録の各国特則"
+          ],
+          "sourcePage": "17",
+          "status": "初稿対応・細目要監査"
+        },
+        {
+          "id": "l3",
+          "title": "取引関係の法務",
+          "topics": [
+            "law-01",
+            "law-property",
+            "law-license",
+            "law-international-contract",
+            "law-consumer"
+          ],
+          "gaps": [
+            "売買・請負・委任・賃貸借の類型別詳細",
+            "フランチャイズ・販売店・提携契約の条項演習",
+            "仲裁判断の執行拒絶事由とCISGの詳細"
+          ],
+          "sourcePage": "17",
+          "status": "初稿対応・細目要監査"
+        },
+        {
+          "id": "l4",
+          "title": "企業活動の法律",
+          "topics": [
+            "law-01",
+            "law-property",
+            "law-02",
+            "law-03",
+            "law-04",
+            "law-05",
+            "law-07",
+            "law-08",
+            "law-consumer",
+            "law-succession",
+            "law-securities",
+            "law-international-contract"
+          ],
+          "gaps": [
+            "株主権の保有要件・機関設計・計算規則の例外を追加",
+            "取適法の類型別資本金・従業員基準の詳細",
+            "相続・事業承継の複合演習と期限確認"
+          ],
+          "sourcePage": "17",
+          "status": "初稿対応・細目要監査"
+        },
+        {
+          "id": "l5",
+          "title": "資本市場へのアクセスと手続",
+          "topics": [
+            "law-securities",
+            "law-04"
+          ],
+          "gaps": [
+            "届出書・通知書・目論見書の金額等基準",
+            "社債発行手続・上場基準の詳細",
+            "2027・2028年度の開示制度改正"
+          ],
+          "sourcePage": "18",
+          "status": "初稿対応・細目要監査"
+        },
+        {
+          "id": "l6",
+          "title": "その他経営法務",
+          "topics": [
+            "law-08",
+            "law-international-contract",
+            "law-startup"
+          ],
+          "gaps": [
+            "法令改正・過年度出題の未分類論点を追加"
+          ],
+          "sourcePage": "18",
+          "status": "初稿対応・細目要監査"
         }
       ]
     },
