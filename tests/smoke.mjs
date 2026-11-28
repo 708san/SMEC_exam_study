@@ -229,6 +229,11 @@ assert(dom.innerHTML.includes('参照資料・年度確認'));
 console.log('PASS: all primary subject draft topics, SME sources, scope and split data integration');
 
 assert(!Object.keys(secondLessons).some(id=>Object.hasOwn(baseLessons,id)||Object.hasOwn(smeLessons,id)));
-for(const sub of curriculum.subjects.filter(s=>['case1','case2'].includes(s.id))){assert(sub.topics.every(t=>lessons[t.id]));const qs=sub.topics.flatMap(t=>lessons[t.id].questions);for(const i of [0,1,2,3])assert.equal(qs.filter(q=>q.answer===i).length,7);for(const t of sub.topics){const l=lessons[t.id];assert(l.writtenDrill.prompt&&l.writtenDrill.model&&l.writtenDrill.review);assert(l.sources.length>=3);for(const q of l.questions)assert.equal(new Set(q.options).size,4);run('state=blank();page="study";selected='+JSON.stringify(t.id)+';render()');assert(dom.innerHTML.includes('記述ミニ演習'));assert(dom.innerHTML.includes('解答例と見直し観点'))}}
-assert.equal(Object.keys(secondLessons).length,14);
-console.log('PASS: case I/II curriculum and writing drills');
+for(const sub of curriculum.subjects.filter(s=>s.stage===2)){assert(sub.topics.every(t=>lessons[t.id]));const qs=sub.topics.flatMap(t=>lessons[t.id].questions);for(const i of [0,1,2,3])assert.equal(qs.filter(q=>q.answer===i).length,7);for(const t of sub.topics){const l=lessons[t.id];assert(l.writtenDrill.prompt&&l.writtenDrill.model&&l.writtenDrill.review);assert(l.sources.length>=3);for(const q of l.questions)assert.equal(new Set(q.options).size,4);run('state=blank();page="study";selected='+JSON.stringify(t.id)+';render()');assert(dom.innerHTML.includes('記述ミニ演習'));assert(dom.innerHTML.includes('解答例と見直し観点'))}}
+assert.equal(Object.keys(secondLessons).length,28);
+assert(topics.every(t=>lessons[t.id]));
+assert.equal(questions.length,863);
+assert.equal(Object.values(lessons).reduce((n,l)=>n+l.sections.length,0),1252);
+assert(Math.abs(-200+[1,2,3].reduce((s,t)=>s+80/1.05**t,0)-17.86)<0.01);
+assert(Math.abs(-200+[1,2,3].reduce((s,t)=>s+65/1.05**t,0)+22.99)<0.01);
+console.log('PASS: case I–IV curriculum and writing drills');
