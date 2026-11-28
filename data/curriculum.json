@@ -1,5 +1,5 @@
 {
-  "version": "draft-2026-11-28-r13",
+  "version": "draft-2026-11-28-r14",
   "status": "2026年度公式案内に基づく暫定索引。一次の経済・財務・企業経営理論・運営管理・経営法務・経営情報システムは項目群の対応付けを実施。全細目・過年度問題・独立内容監査は未完了。",
   "subjects": [
     {
@@ -115,6 +115,14 @@
                 "国内・海外の経済事情を把握する資料"
               ],
               "status": "増補済み・独立監査待ち"
+            },
+            {
+              "topic": "econ-01",
+              "sections": [
+                "GDPに含まれる取引と含まれない取引",
+                "国内総生産から国民可処分所得へ"
+              ],
+              "status": "増補済み・独立監査待ち"
             }
           ],
           "auditItems": [
@@ -124,7 +132,17 @@
               "topics": [
                 "econ-01"
               ],
-              "status": "対応候補・本文要照合"
+              "status": "本文・応用例を部分点検／独立監査待ち",
+              "evidence": [
+                {
+                  "topic": "econ-01",
+                  "sections": [
+                    "GDPに含まれる取引と含まれない取引",
+                    "国内総生産から国民可処分所得へ"
+                  ],
+                  "revision": 2
+                }
+              ]
             },
             {
               "id": "e1-2",
@@ -190,6 +208,38 @@
                 "AD-ASをIS-LMからつなぐ"
               ],
               "status": "増補済み・独立監査待ち"
+            },
+            {
+              "topic": "econ-07",
+              "sections": [
+                "貯蓄投資図と倹約のパラドックス",
+                "比例税・輸入を含む乗数を導く"
+              ],
+              "status": "増補済み・独立監査待ち"
+            },
+            {
+              "topic": "econ-08",
+              "sections": [
+                "現金保有・準備を含む貨幣乗数",
+                "債券価格・金利と金融政策"
+              ],
+              "status": "増補済み・独立監査待ち"
+            },
+            {
+              "topic": "econ-09",
+              "sections": [
+                "IS-LMで政策の効き方を比較する",
+                "閉鎖経済から開放経済へのIS"
+              ],
+              "status": "増補済み・独立監査待ち"
+            },
+            {
+              "topic": "econ-growth",
+              "sections": [
+                "ソロー型成長と内生的成長の違い",
+                "成長会計：寄与度の分解"
+              ],
+              "status": "増補済み・独立監査待ち"
             }
           ],
           "auditItems": [
@@ -199,7 +249,17 @@
               "topics": [
                 "econ-07"
               ],
-              "status": "対応候補・本文要照合"
+              "status": "本文・応用例を部分点検／独立監査待ち",
+              "evidence": [
+                {
+                  "topic": "econ-07",
+                  "sections": [
+                    "貯蓄投資図と倹約のパラドックス",
+                    "比例税・輸入を含む乗数を導く"
+                  ],
+                  "revision": 2
+                }
+              ]
             },
             {
               "id": "e2-2",
@@ -207,7 +267,17 @@
               "topics": [
                 "econ-08"
               ],
-              "status": "対応候補・本文要照合"
+              "status": "本文・応用例を部分点検／独立監査待ち",
+              "evidence": [
+                {
+                  "topic": "econ-08",
+                  "sections": [
+                    "現金保有・準備を含む貨幣乗数",
+                    "債券価格・金利と金融政策"
+                  ],
+                  "revision": 3
+                }
+              ]
             },
             {
               "id": "e2-3",
@@ -215,7 +285,17 @@
               "topics": [
                 "econ-09"
               ],
-              "status": "対応候補・本文要照合"
+              "status": "本文・応用例を部分点検／独立監査待ち",
+              "evidence": [
+                {
+                  "topic": "econ-09",
+                  "sections": [
+                    "IS-LMで政策の効き方を比較する",
+                    "閉鎖経済から開放経済へのIS"
+                  ],
+                  "revision": 2
+                }
+              ]
             },
             {
               "id": "e2-4",
@@ -223,7 +303,17 @@
               "topics": [
                 "econ-07"
               ],
-              "status": "対応候補・本文要照合"
+              "status": "本文・応用例を部分点検／独立監査待ち",
+              "evidence": [
+                {
+                  "topic": "econ-07",
+                  "sections": [
+                    "貯蓄投資図と倹約のパラドックス",
+                    "比例税・輸入を含む乗数を導く"
+                  ],
+                  "revision": 2
+                }
+              ]
             },
             {
               "id": "e2-5",
@@ -231,7 +321,17 @@
               "topics": [
                 "econ-08"
               ],
-              "status": "対応候補・本文要照合"
+              "status": "本文・応用例を部分点検／独立監査待ち",
+              "evidence": [
+                {
+                  "topic": "econ-08",
+                  "sections": [
+                    "現金保有・準備を含む貨幣乗数",
+                    "債券価格・金利と金融政策"
+                  ],
+                  "revision": 3
+                }
+              ]
             },
             {
               "id": "e2-6",
@@ -247,7 +347,17 @@
               "topics": [
                 "econ-growth"
               ],
-              "status": "対応候補・本文要照合"
+              "status": "本文・応用例を部分点検／独立監査待ち",
+              "evidence": [
+                {
+                  "topic": "econ-growth",
+                  "sections": [
+                    "ソロー型成長と内生的成長の違い",
+                    "成長会計：寄与度の分解"
+                  ],
+                  "revision": 3
+                }
+              ]
             }
           ]
         },
@@ -278,6 +388,13 @@
                 "関税の余剰を数値で追う"
               ],
               "status": "増補済み・独立監査待ち"
+            },
+            {
+              "topic": "econ-trade",
+              "sections": [
+                "生産可能性フロンティアと限界変形率"
+              ],
+              "status": "増補済み・独立監査待ち"
             }
           ],
           "auditItems": [
@@ -287,7 +404,16 @@
               "topics": [
                 "econ-trade"
               ],
-              "status": "対応候補・本文要照合"
+              "status": "本文・応用例を部分点検／独立監査待ち",
+              "evidence": [
+                {
+                  "topic": "econ-trade",
+                  "sections": [
+                    "生産可能性フロンティアと限界変形率"
+                  ],
+                  "revision": 3
+                }
+              ]
             },
             {
               "id": "e3-2",
@@ -394,7 +520,17 @@
               "topics": [
                 "econ-04"
               ],
-              "status": "対応候補・本文要照合"
+              "status": "本文・応用例を部分点検／独立監査待ち",
+              "evidence": [
+                {
+                  "topic": "econ-04",
+                  "sections": [
+                    "均衡の安定性：ワルラスとマーシャル",
+                    "弾力性と総支出を微分から理解する"
+                  ],
+                  "revision": 3
+                }
+              ]
             },
             {
               "id": "e5-2",
@@ -403,7 +539,17 @@
                 "econ-04",
                 "econ-02"
               ],
-              "status": "対応候補・本文要照合"
+              "status": "本文・応用例を部分点検／独立監査待ち",
+              "evidence": [
+                {
+                  "topic": "econ-04",
+                  "sections": [
+                    "均衡の安定性：ワルラスとマーシャル",
+                    "弾力性と総支出を微分から理解する"
+                  ],
+                  "revision": 3
+                }
+              ]
             },
             {
               "id": "e5-3",
@@ -411,7 +557,17 @@
               "topics": [
                 "econ-welfare"
               ],
-              "status": "対応候補・本文要照合"
+              "status": "本文・応用例を部分点検／独立監査待ち",
+              "evidence": [
+                {
+                  "topic": "econ-welfare",
+                  "sections": [
+                    "補助金による市場均衡と社会的費用",
+                    "価格上限と配給の問題"
+                  ],
+                  "revision": 2
+                }
+              ]
             },
             {
               "id": "e5-4",
@@ -428,7 +584,35 @@
                 "econ-welfare",
                 "econ-04"
               ],
-              "status": "対応候補・本文要照合"
+              "status": "本文・応用例を部分点検／独立監査待ち",
+              "evidence": [
+                {
+                  "topic": "econ-welfare",
+                  "sections": [
+                    "補助金による市場均衡と社会的費用",
+                    "価格上限と配給の問題"
+                  ],
+                  "revision": 2
+                }
+              ]
+            }
+          ],
+          "detailChecks": [
+            {
+              "topic": "econ-04",
+              "sections": [
+                "均衡の安定性：ワルラスとマーシャル",
+                "弾力性と総支出を微分から理解する"
+              ],
+              "status": "増補済み・独立監査待ち"
+            },
+            {
+              "topic": "econ-welfare",
+              "sections": [
+                "補助金による市場均衡と社会的費用",
+                "価格上限と配給の問題"
+              ],
+              "status": "増補済み・独立監査待ち"
             }
           ]
         },
@@ -461,6 +645,14 @@
                 "費用曲線と供給の導出"
               ],
               "status": "増補済み・独立監査待ち"
+            },
+            {
+              "topic": "econ-02",
+              "sections": [
+                "異時点間の消費：今日と将来の選択",
+                "現物給付・補助金と予算集合"
+              ],
+              "status": "増補済み・独立監査待ち"
             }
           ],
           "auditItems": [
@@ -478,7 +670,17 @@
               "topics": [
                 "econ-02"
               ],
-              "status": "対応候補・本文要照合"
+              "status": "本文・応用例を部分点検／独立監査待ち",
+              "evidence": [
+                {
+                  "topic": "econ-02",
+                  "sections": [
+                    "異時点間の消費：今日と将来の選択",
+                    "現物給付・補助金と予算集合"
+                  ],
+                  "revision": 3
+                }
+              ]
             },
             {
               "id": "e6-3",
@@ -486,7 +688,17 @@
               "topics": [
                 "econ-02"
               ],
-              "status": "対応候補・本文要照合"
+              "status": "本文・応用例を部分点検／独立監査待ち",
+              "evidence": [
+                {
+                  "topic": "econ-02",
+                  "sections": [
+                    "異時点間の消費：今日と将来の選択",
+                    "現物給付・補助金と予算集合"
+                  ],
+                  "revision": 3
+                }
+              ]
             },
             {
               "id": "e6-4",
@@ -528,6 +740,14 @@
                 "製品差別化と協調の利得"
               ],
               "status": "増補済み・独立監査待ち"
+            },
+            {
+              "topic": "econ-05",
+              "sections": [
+                "独占的競争の短期と長期を図で読む",
+                "自然独占・平均費用価格と限界費用価格"
+              ],
+              "status": "増補済み・独立監査待ち"
             }
           ],
           "auditItems": [
@@ -554,7 +774,17 @@
               "topics": [
                 "econ-05"
               ],
-              "status": "対応候補・本文要照合"
+              "status": "本文・応用例を部分点検／独立監査待ち",
+              "evidence": [
+                {
+                  "topic": "econ-05",
+                  "sections": [
+                    "独占的競争の短期と長期を図で読む",
+                    "自然独占・平均費用価格と限界費用価格"
+                  ],
+                  "revision": 3
+                }
+              ]
             },
             {
               "id": "e7-4",
@@ -563,7 +793,17 @@
                 "econ-03",
                 "econ-05"
               ],
-              "status": "対応候補・本文要照合"
+              "status": "本文・応用例を部分点検／独立監査待ち",
+              "evidence": [
+                {
+                  "topic": "econ-05",
+                  "sections": [
+                    "独占的競争の短期と長期を図で読む",
+                    "自然独占・平均費用価格と限界費用価格"
+                  ],
+                  "revision": 3
+                }
+              ]
             }
           ]
         },
@@ -586,6 +826,15 @@
                 "要素市場での報酬と経済レント"
               ],
               "status": "増補済み・独立監査待ち"
+            },
+            {
+              "topic": "econ-distribution",
+              "sections": [
+                "社会厚生関数：ベンサムとロールズ",
+                "国際的な資本・労働移動と所得分配",
+                "最低賃金と労働市場の余剰"
+              ],
+              "status": "増補済み・独立監査待ち"
             }
           ],
           "auditItems": [
@@ -596,7 +845,18 @@
                 "econ-distribution",
                 "econ-welfare"
               ],
-              "status": "対応候補・本文要照合"
+              "status": "本文・応用例を部分点検／独立監査待ち",
+              "evidence": [
+                {
+                  "topic": "econ-distribution",
+                  "sections": [
+                    "社会厚生関数：ベンサムとロールズ",
+                    "国際的な資本・労働移動と所得分配",
+                    "最低賃金と労働市場の余剰"
+                  ],
+                  "revision": 3
+                }
+              ]
             },
             {
               "id": "e8-2",
@@ -605,7 +865,18 @@
                 "econ-distribution",
                 "econ-10"
               ],
-              "status": "対応候補・本文要照合"
+              "status": "本文・応用例を部分点検／独立監査待ち",
+              "evidence": [
+                {
+                  "topic": "econ-distribution",
+                  "sections": [
+                    "社会厚生関数：ベンサムとロールズ",
+                    "国際的な資本・労働移動と所得分配",
+                    "最低賃金と労働市場の余剰"
+                  ],
+                  "revision": 3
+                }
+              ]
             },
             {
               "id": "e8-3",
@@ -613,7 +884,18 @@
               "topics": [
                 "econ-distribution"
               ],
-              "status": "対応候補・本文要照合"
+              "status": "本文・応用例を部分点検／独立監査待ち",
+              "evidence": [
+                {
+                  "topic": "econ-distribution",
+                  "sections": [
+                    "社会厚生関数：ベンサムとロールズ",
+                    "国際的な資本・労働移動と所得分配",
+                    "最低賃金と労働市場の余剰"
+                  ],
+                  "revision": 3
+                }
+              ]
             }
           ]
         },
@@ -775,6 +1057,14 @@
                 "精算表で決算整理から財務諸表へ"
               ],
               "status": "増補済み・独立監査待ち"
+            },
+            {
+              "topic": "fin-bookkeeping",
+              "sections": [
+                "税込・税抜経理の消費税仕訳",
+                "前払利息と借入元本"
+              ],
+              "status": "増補済み・独立監査待ち"
             }
           ],
           "auditItems": [
@@ -784,7 +1074,17 @@
               "topics": [
                 "fin-bookkeeping"
               ],
-              "status": "対応候補・本文要照合"
+              "status": "本文・応用例を部分点検／独立監査待ち",
+              "evidence": [
+                {
+                  "topic": "fin-bookkeeping",
+                  "sections": [
+                    "税込・税抜経理の消費税仕訳",
+                    "前払利息と借入元本"
+                  ],
+                  "revision": 3
+                }
+              ]
             },
             {
               "id": "f1-2",
@@ -800,9 +1100,20 @@
               "title": "決算整理・財務諸表",
               "topics": [
                 "fin-closing",
-                "fin-statements"
+                "fin-statements",
+                "fin-bookkeeping"
               ],
-              "status": "対応候補・本文要照合"
+              "status": "本文・応用例を部分点検／独立監査待ち",
+              "evidence": [
+                {
+                  "topic": "fin-bookkeeping",
+                  "sections": [
+                    "税込・税抜経理の消費税仕訳",
+                    "前払利息と借入元本"
+                  ],
+                  "revision": 3
+                }
+              ]
             }
           ]
         },
@@ -840,18 +1151,40 @@
               "title": "資産測定・棚卸・固定資産",
               "topics": [
                 "fin-assets",
-                "fin-accounting-details"
+                "fin-accounting-details",
+                "fin-statements"
               ],
-              "status": "対応候補・本文要照合"
+              "status": "本文・応用例を部分点検／独立監査待ち",
+              "evidence": [
+                {
+                  "topic": "fin-statements",
+                  "sections": [
+                    "正常営業循環基準と一年基準",
+                    "固定資産・投資の損益表示"
+                  ],
+                  "revision": 3
+                }
+              ]
             },
             {
               "id": "f2-3",
               "title": "負債・引当・リース",
               "topics": [
                 "fin-accounting-details",
-                "fin-standards"
+                "fin-standards",
+                "fin-statements"
               ],
-              "status": "対応候補・本文要照合"
+              "status": "本文・応用例を部分点検／独立監査待ち",
+              "evidence": [
+                {
+                  "topic": "fin-statements",
+                  "sections": [
+                    "正常営業循環基準と一年基準",
+                    "固定資産・投資の損益表示"
+                  ],
+                  "revision": 3
+                }
+              ]
             },
             {
               "id": "f2-4",
@@ -860,7 +1193,17 @@
                 "fin-statements",
                 "fin-dividend"
               ],
-              "status": "対応候補・本文要照合"
+              "status": "本文・応用例を部分点検／独立監査待ち",
+              "evidence": [
+                {
+                  "topic": "fin-statements",
+                  "sections": [
+                    "正常営業循環基準と一年基準",
+                    "固定資産・投資の損益表示"
+                  ],
+                  "revision": 3
+                }
+              ]
             },
             {
               "id": "f2-5",
@@ -885,6 +1228,16 @@
                 "fin-disclosure"
               ],
               "status": "対応候補・本文要照合"
+            }
+          ],
+          "detailChecks": [
+            {
+              "topic": "fin-statements",
+              "sections": [
+                "正常営業循環基準と一年基準",
+                "固定資産・投資の損益表示"
+              ],
+              "status": "増補済み・独立監査待ち"
             }
           ]
         },
@@ -959,6 +1312,14 @@
                 "活動基準原価計算（ABC）"
               ],
               "status": "増補済み・独立監査待ち"
+            },
+            {
+              "topic": "fin-budget",
+              "sections": [
+                "実際労務費を発生主義で計算する",
+                "責任会計と管理可能利益"
+              ],
+              "status": "増補済み・独立監査待ち"
             }
           ],
           "auditItems": [
@@ -993,7 +1354,17 @@
               "topics": [
                 "fin-budget"
               ],
-              "status": "対応候補・本文要照合"
+              "status": "本文・応用例を部分点検／独立監査待ち",
+              "evidence": [
+                {
+                  "topic": "fin-budget",
+                  "sections": [
+                    "実際労務費を発生主義で計算する",
+                    "責任会計と管理可能利益"
+                  ],
+                  "revision": 2
+                }
+              ]
             },
             {
               "id": "f4-5",
@@ -1026,7 +1397,16 @@
               "topics": [
                 "fin-analysis"
               ],
-              "status": "対応候補・本文要照合"
+              "status": "本文・応用例を部分点検／独立監査待ち",
+              "evidence": [
+                {
+                  "topic": "fin-analysis",
+                  "sections": [
+                    "固定比率と固定長期適合率"
+                  ],
+                  "revision": 3
+                }
+              ]
             },
             {
               "id": "f5-2",
@@ -1043,6 +1423,15 @@
                 "fin-cvp"
               ],
               "status": "対応候補・本文要照合"
+            }
+          ],
+          "detailChecks": [
+            {
+              "topic": "fin-analysis",
+              "sections": [
+                "固定比率と固定長期適合率"
+              ],
+              "status": "増補済み・独立監査待ち"
             }
           ]
         },
@@ -1069,7 +1458,17 @@
                 "fin-cvp",
                 "fin-mix"
               ],
-              "status": "対応候補・本文要照合"
+              "status": "本文・応用例を部分点検／独立監査待ち",
+              "evidence": [
+                {
+                  "topic": "fin-mix",
+                  "sections": [
+                    "複数制約の線形計画を手で解く",
+                    "機会原価と埋没原価の実例"
+                  ],
+                  "revision": 2
+                }
+              ]
             },
             {
               "id": "f6-2",
@@ -1085,7 +1484,17 @@
               "topics": [
                 "fin-working-capital"
               ],
-              "status": "対応候補・本文要照合"
+              "status": "本文・応用例を部分点検／独立監査待ち",
+              "evidence": [
+                {
+                  "topic": "fin-working-capital",
+                  "sections": [
+                    "月次資金繰り表を連続して作る",
+                    "資金繰りの改善と利益への影響"
+                  ],
+                  "revision": 2
+                }
+              ]
             },
             {
               "id": "f6-4",
@@ -1095,7 +1504,35 @@
                 "fin-working-capital",
                 "fin-productivity"
               ],
-              "status": "対応候補・本文要照合"
+              "status": "本文・応用例を部分点検／独立監査待ち",
+              "evidence": [
+                {
+                  "topic": "fin-working-capital",
+                  "sections": [
+                    "月次資金繰り表を連続して作る",
+                    "資金繰りの改善と利益への影響"
+                  ],
+                  "revision": 2
+                }
+              ]
+            }
+          ],
+          "detailChecks": [
+            {
+              "topic": "fin-mix",
+              "sections": [
+                "複数制約の線形計画を手で解く",
+                "機会原価と埋没原価の実例"
+              ],
+              "status": "増補済み・独立監査待ち"
+            },
+            {
+              "topic": "fin-working-capital",
+              "sections": [
+                "月次資金繰り表を連続して作る",
+                "資金繰りの改善と利益への影響"
+              ],
+              "status": "増補済み・独立監査待ち"
             }
           ]
         },
@@ -1186,15 +1623,36 @@
               "topics": [
                 "fin-investment"
               ],
-              "status": "対応候補・本文要照合"
+              "status": "本文・応用例を部分点検／独立監査待ち",
+              "evidence": [
+                {
+                  "topic": "fin-investment",
+                  "sections": [
+                    "税引後キャッシュフローの二つの式",
+                    "年金現価係数と異なる耐用年数"
+                  ],
+                  "revision": 3
+                }
+              ]
             },
             {
               "id": "f8-2",
               "title": "回収期間・会計利益率・IRR・収益性指数",
               "topics": [
-                "fin-irr"
+                "fin-irr",
+                "fin-investment"
               ],
-              "status": "対応候補・本文要照合"
+              "status": "本文・応用例を部分点検／独立監査待ち",
+              "evidence": [
+                {
+                  "topic": "fin-investment",
+                  "sections": [
+                    "税引後キャッシュフローの二つの式",
+                    "年金現価係数と異なる耐用年数"
+                  ],
+                  "revision": 3
+                }
+              ]
             },
             {
               "id": "f8-3",
@@ -1203,6 +1661,16 @@
                 "fin-risk-management"
               ],
               "status": "対応候補・本文要照合"
+            }
+          ],
+          "detailChecks": [
+            {
+              "topic": "fin-investment",
+              "sections": [
+                "税引後キャッシュフローの二つの式",
+                "年金現価係数と異なる耐用年数"
+              ],
+              "status": "増補済み・独立監査待ち"
             }
           ]
         },
@@ -1232,6 +1700,13 @@
                 "市場モデルとCAPMの違い"
               ],
               "status": "増補済み・独立監査待ち"
+            },
+            {
+              "topic": "fin-portfolio",
+              "sections": [
+                "無リスク資産とトービンの分離定理"
+              ],
+              "status": "増補済み・独立監査待ち"
             }
           ],
           "auditItems": [
@@ -1241,7 +1716,16 @@
               "topics": [
                 "fin-portfolio"
               ],
-              "status": "対応候補・本文要照合"
+              "status": "本文・応用例を部分点検／独立監査待ち",
+              "evidence": [
+                {
+                  "topic": "fin-portfolio",
+                  "sections": [
+                    "無リスク資産とトービンの分離定理"
+                  ],
+                  "revision": 3
+                }
+              ]
             },
             {
               "id": "f9-2",
@@ -1249,7 +1733,16 @@
               "topics": [
                 "fin-portfolio"
               ],
-              "status": "対応候補・本文要照合"
+              "status": "本文・応用例を部分点検／独立監査待ち",
+              "evidence": [
+                {
+                  "topic": "fin-portfolio",
+                  "sections": [
+                    "無リスク資産とトービンの分離定理"
+                  ],
+                  "revision": 3
+                }
+              ]
             },
             {
               "id": "f9-3",
@@ -1281,6 +1774,13 @@
                 "買収評価：資産・収益・市場の三方向"
               ],
               "status": "増補済み・独立監査待ち"
+            },
+            {
+              "topic": "fin-residual",
+              "sections": [
+                "残余利益モデルを期間別に計算する"
+              ],
+              "status": "増補済み・独立監査待ち"
             }
           ],
           "auditItems": [
@@ -1298,7 +1798,16 @@
               "topics": [
                 "fin-residual"
               ],
-              "status": "対応候補・本文要照合"
+              "status": "本文・応用例を部分点検／独立監査待ち",
+              "evidence": [
+                {
+                  "topic": "fin-residual",
+                  "sections": [
+                    "残余利益モデルを期間別に計算する"
+                  ],
+                  "revision": 2
+                }
+              ]
             },
             {
               "id": "f10-3",
@@ -1339,6 +1848,14 @@
                 "金利スワップと通貨スワップ"
               ],
               "status": "増補済み・独立監査待ち"
+            },
+            {
+              "topic": "fin-derivatives",
+              "sections": [
+                "オプション価格の本質的価値と時間価値",
+                "為替ヘッジの損益と残余リスク"
+              ],
+              "status": "増補済み・独立監査待ち"
             }
           ],
           "auditItems": [
@@ -1356,7 +1873,17 @@
               "topics": [
                 "fin-derivatives"
               ],
-              "status": "対応候補・本文要照合"
+              "status": "本文・応用例を部分点検／独立監査待ち",
+              "evidence": [
+                {
+                  "topic": "fin-derivatives",
+                  "sections": [
+                    "オプション価格の本質的価値と時間価値",
+                    "為替ヘッジの損益と残余リスク"
+                  ],
+                  "revision": 3
+                }
+              ]
             },
             {
               "id": "f11-3",
@@ -1364,7 +1891,17 @@
               "topics": [
                 "fin-derivatives"
               ],
-              "status": "対応候補・本文要照合"
+              "status": "本文・応用例を部分点検／独立監査待ち",
+              "evidence": [
+                {
+                  "topic": "fin-derivatives",
+                  "sections": [
+                    "オプション価格の本質的価値と時間価値",
+                    "為替ヘッジの損益と残余リスク"
+                  ],
+                  "revision": 3
+                }
+              ]
             },
             {
               "id": "f11-4",
