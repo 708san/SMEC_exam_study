@@ -234,8 +234,8 @@ assert(!Object.keys(secondLessons).some(id=>Object.hasOwn(baseLessons,id)||Objec
 for(const sub of curriculum.subjects.filter(s=>s.stage===2)){assert(sub.topics.every(t=>lessons[t.id]));const qs=sub.topics.flatMap(t=>lessons[t.id].questions);for(const i of [0,1,2,3])assert.equal(qs.filter(q=>q.answer===i).length,7);for(const t of sub.topics){const l=lessons[t.id];assert(l.writtenDrill.prompt&&l.writtenDrill.model&&l.writtenDrill.review);assert(l.sources.length>=3);for(const q of l.questions)assert.equal(new Set(q.options).size,4);run('state=blank();page="study";selected='+JSON.stringify(t.id)+';render()');assert(dom.innerHTML.includes('記述ミニ演習'));assert(dom.innerHTML.includes('解答例と見直し観点'))}}
 assert.equal(Object.keys(secondLessons).length,28);
 assert(topics.every(t=>lessons[t.id]));
-assert.equal(questions.length,967);
-assert.equal(Object.values(lessons).reduce((n,l)=>n+l.sections.length,0),1352);
+assert.equal(questions.length,995);
+assert.equal(Object.values(lessons).reduce((n,l)=>n+l.sections.length,0),1377);
 assert(Math.abs(-200+[1,2,3].reduce((s,t)=>s+80/1.05**t,0)-17.86)<0.01);
 assert(Math.abs(-200+[1,2,3].reduce((s,t)=>s+65/1.05**t,0)+22.99)<0.01);
 console.log('PASS: case I–IV curriculum and writing drills');
@@ -269,3 +269,5 @@ console.log('PASS: previously unmapped candidate links and economic diagrams');
 const partialAudit=audit.filter(x=>x.evidence?.length);assert(partialAudit.length>0);for(const x of partialAudit)for(const ev of x.evidence){assert(x.topics.includes(ev.topic));assert(ev.revision<=lessons[ev.topic].revision);assert(ev.sections.every(h=>lessons[ev.topic].sections.some(s=>s[0]===h)));assert(x.status.includes('独立監査待ち'));}
 assert.equal(1000+130-50,1080);assert.equal(120-1080*.1,12);assert.equal((100*(1-1.05**-4)/.05-300).toFixed(2),'54.60');assert(Math.abs((1+.2)/(.2+.1)-4)<1e-9);assert.equal(1800+1800-1200,2400);assert.equal(100+100+80-120-60-20,80);assert.equal(80+120+100-130-60-70,40);
 run('state=blank();page="study";selected="econ";render()');assert(dom.innerHTML.includes('点検・増補した節'));console.log('PASS: partial depth evidence and calculation checks');
+
+assert.equal(4*25/25,4);assert.equal((.9**20*100).toFixed(1),'12.2');assert.equal(30*5+10*25,400);assert.equal((1200000-600000)/(3500-2000),400);assert.equal(21/(3*8),.875);console.log('PASS: management and operations examples');

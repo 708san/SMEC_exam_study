@@ -1,5 +1,5 @@
 {
-  "version": "draft-2026-11-28-r14",
+  "version": "draft-2026-11-28-r15",
   "status": "2026年度公式案内に基づく暫定索引。一次の経済・財務・企業経営理論・運営管理・経営法務・経営情報システムは項目群の対応付けを実施。全細目・過年度問題・独立内容監査は未完了。",
   "subjects": [
     {
@@ -2150,7 +2150,16 @@
               "topics": [
                 "mgmt-02"
               ],
-              "status": "対応候補・本文要照合"
+              "status": "本文・応用例を部分点検／独立監査待ち",
+              "evidence": [
+                {
+                  "topic": "mgmt-02",
+                  "sections": [
+                    "ブルー・オーシャン戦略と四つのアクション"
+                  ],
+                  "revision": 4
+                }
+              ]
             },
             {
               "id": "m3-3",
@@ -2160,6 +2169,15 @@
                 "mgmt-network"
               ],
               "status": "対応候補・本文要照合"
+            }
+          ],
+          "detailChecks": [
+            {
+              "topic": "mgmt-02",
+              "sections": [
+                "ブルー・オーシャン戦略と四つのアクション"
+              ],
+              "status": "増補済み・独立監査待ち"
             }
           ]
         },
@@ -2190,7 +2208,17 @@
               "topics": [
                 "mgmt-04"
               ],
-              "status": "対応候補・本文要照合"
+              "status": "本文・応用例を部分点検／独立監査待ち",
+              "evidence": [
+                {
+                  "topic": "mgmt-04",
+                  "sections": [
+                    "A-Uモデルと支配的デザイン",
+                    "破壊的革新と資源配分"
+                  ],
+                  "revision": 3
+                }
+              ]
             },
             {
               "id": "m4-3",
@@ -2207,6 +2235,16 @@
                 "mgmt-learning"
               ],
               "status": "対応候補・本文要照合"
+            }
+          ],
+          "detailChecks": [
+            {
+              "topic": "mgmt-04",
+              "sections": [
+                "A-Uモデルと支配的デザイン",
+                "破壊的革新と資源配分"
+              ],
+              "status": "増補済み・独立監査待ち"
             }
           ]
         },
@@ -2236,7 +2274,16 @@
               "topics": [
                 "mgmt-international"
               ],
-              "status": "対応候補・本文要照合"
+              "status": "本文・応用例を部分点検／独立監査待ち",
+              "evidence": [
+                {
+                  "topic": "mgmt-international",
+                  "sections": [
+                    "国際戦略のAAAフレームワーク"
+                  ],
+                  "revision": 2
+                }
+              ]
             },
             {
               "id": "m5-3",
@@ -2245,6 +2292,15 @@
                 "mgmt-international"
               ],
               "status": "対応候補・本文要照合"
+            }
+          ],
+          "detailChecks": [
+            {
+              "topic": "mgmt-international",
+              "sections": [
+                "国際戦略のAAAフレームワーク"
+              ],
+              "status": "増補済み・独立監査待ち"
             }
           ]
         },
@@ -2334,7 +2390,17 @@
               "topics": [
                 "mgmt-05"
               ],
-              "status": "対応候補・本文要照合"
+              "status": "本文・応用例を部分点検／独立監査待ち",
+              "evidence": [
+                {
+                  "topic": "mgmt-05",
+                  "sections": [
+                    "統制範囲と組織階層",
+                    "権限受容説と意思決定の前提"
+                  ],
+                  "revision": 3
+                }
+              ]
             },
             {
               "id": "m8-3",
@@ -2343,6 +2409,16 @@
                 "mgmt-05"
               ],
               "status": "対応候補・本文要照合"
+            }
+          ],
+          "detailChecks": [
+            {
+              "topic": "mgmt-05",
+              "sections": [
+                "統制範囲と組織階層",
+                "権限受容説と意思決定の前提"
+              ],
+              "status": "増補済み・独立監査待ち"
             }
           ]
         },
@@ -2537,7 +2613,17 @@
               "topics": [
                 "mgmt-network"
               ],
-              "status": "対応候補・本文要照合"
+              "status": "本文・応用例を部分点検／独立監査待ち",
+              "evidence": [
+                {
+                  "topic": "mgmt-network",
+                  "sections": [
+                    "組織個体群生態学と密度依存",
+                    "資産特殊性と取引費用"
+                  ],
+                  "revision": 2
+                }
+              ]
             },
             {
               "id": "m13-2",
@@ -2546,6 +2632,16 @@
                 "mgmt-network"
               ],
               "status": "対応候補・本文要照合"
+            }
+          ],
+          "detailChecks": [
+            {
+              "topic": "mgmt-network",
+              "sections": [
+                "組織個体群生態学と密度依存",
+                "資産特殊性と取引費用"
+              ],
+              "status": "増補済み・独立監査待ち"
             }
           ]
         },
@@ -2767,7 +2863,27 @@
               "topics": [
                 "mgmt-research"
               ],
-              "status": "対応候補・本文要照合"
+              "status": "本文・応用例を部分点検／独立監査待ち",
+              "evidence": [
+                {
+                  "topic": "mgmt-research",
+                  "sections": [
+                    "クロス集計とカイ二乗検定",
+                    "分析法を目的で選ぶ"
+                  ],
+                  "revision": 2
+                }
+              ]
+            }
+          ],
+          "detailChecks": [
+            {
+              "topic": "mgmt-research",
+              "sections": [
+                "クロス集計とカイ二乗検定",
+                "分析法を目的で選ぶ"
+              ],
+              "status": "増補済み・独立監査待ち"
             }
           ]
         },
@@ -3079,7 +3195,17 @@
               "topics": [
                 "mgmt-communication"
               ],
-              "status": "対応候補・本文要照合"
+              "status": "本文・応用例を部分点検／独立監査待ち",
+              "evidence": [
+                {
+                  "topic": "mgmt-communication",
+                  "sections": [
+                    "人的販売の過程と購買後フォロー",
+                    "段階的依頼と心理効果"
+                  ],
+                  "revision": 2
+                }
+              ]
             },
             {
               "id": "m25-3",
@@ -3096,6 +3222,16 @@
                 "mgmt-communication"
               ],
               "status": "対応候補・本文要照合"
+            }
+          ],
+          "detailChecks": [
+            {
+              "topic": "mgmt-communication",
+              "sections": [
+                "人的販売の過程と購買後フォロー",
+                "段階的依頼と心理効果"
+              ],
+              "status": "増補済み・独立監査待ち"
             }
           ]
         },
@@ -3334,6 +3470,29 @@
                 "製番管理・オーダーエントリー・座席予約型"
               ],
               "status": "増補済み・独立監査待ち"
+            },
+            {
+              "topic": "ops-design",
+              "sections": [
+                "工作機械と加工方法",
+                "誤操作防止と故障時安全"
+              ],
+              "status": "増補済み・独立監査待ち"
+            },
+            {
+              "topic": "ops-mrp",
+              "sections": [
+                "タイムバケットとタイムフェイズ"
+              ],
+              "status": "増補済み・独立監査待ち"
+            },
+            {
+              "topic": "ops-02",
+              "sections": [
+                "ラインバランシングと編成効率",
+                "製造ロットと運搬ロット"
+              ],
+              "status": "増補済み・独立監査待ち"
             }
           ],
           "auditItems": [
@@ -3351,7 +3510,17 @@
               "topics": [
                 "ops-design"
               ],
-              "status": "対応候補・本文要照合"
+              "status": "本文・応用例を部分点検／独立監査待ち",
+              "evidence": [
+                {
+                  "topic": "ops-design",
+                  "sections": [
+                    "工作機械と加工方法",
+                    "誤操作防止と故障時安全"
+                  ],
+                  "revision": 3
+                }
+              ]
             },
             {
               "id": "o2-3",
@@ -3400,7 +3569,17 @@
               "topics": [
                 "ops-02"
               ],
-              "status": "対応候補・本文要照合"
+              "status": "本文・応用例を部分点検／独立監査待ち",
+              "evidence": [
+                {
+                  "topic": "ops-02",
+                  "sections": [
+                    "ラインバランシングと編成効率",
+                    "製造ロットと運搬ロット"
+                  ],
+                  "revision": 2
+                }
+              ]
             },
             {
               "id": "o2-9",
@@ -3416,7 +3595,16 @@
               "topics": [
                 "ops-mrp"
               ],
-              "status": "対応候補・本文要照合"
+              "status": "本文・応用例を部分点検／独立監査待ち",
+              "evidence": [
+                {
+                  "topic": "ops-mrp",
+                  "sections": [
+                    "タイムバケットとタイムフェイズ"
+                  ],
+                  "revision": 2
+                }
+              ]
             },
             {
               "id": "o2-11",
@@ -3467,7 +3655,17 @@
               "topics": [
                 "ops-ie"
               ],
-              "status": "対応候補・本文要照合"
+              "status": "本文・応用例を部分点検／独立監査待ち",
+              "evidence": [
+                {
+                  "topic": "ops-ie",
+                  "sections": [
+                    "サーブリッグと動作改善",
+                    "余裕率の分母"
+                  ],
+                  "revision": 2
+                }
+              ]
             },
             {
               "id": "o3-3",
@@ -3485,6 +3683,16 @@
                 "ops-05"
               ],
               "status": "対応候補・本文要照合"
+            }
+          ],
+          "detailChecks": [
+            {
+              "topic": "ops-ie",
+              "sections": [
+                "サーブリッグと動作改善",
+                "余裕率の分母"
+              ],
+              "status": "増補済み・独立監査待ち"
             }
           ]
         },
@@ -3534,7 +3742,17 @@
               "topics": [
                 "ops-05"
               ],
-              "status": "対応候補・本文要照合"
+              "status": "本文・応用例を部分点検／独立監査待ち",
+              "evidence": [
+                {
+                  "topic": "ops-05",
+                  "sections": [
+                    "SLPの分析から配置案へ",
+                    "搬送負荷を比較する"
+                  ],
+                  "revision": 2
+                }
+              ]
             },
             {
               "id": "o4-5",
@@ -3542,7 +3760,35 @@
               "topics": [
                 "ops-maintenance"
               ],
-              "status": "対応候補・本文要照合"
+              "status": "本文・応用例を部分点検／独立監査待ち",
+              "evidence": [
+                {
+                  "topic": "ops-maintenance",
+                  "sections": [
+                    "設備費用分岐点と埋没費用",
+                    "等価年間費用と設備更新"
+                  ],
+                  "revision": 2
+                }
+              ]
+            }
+          ],
+          "detailChecks": [
+            {
+              "topic": "ops-05",
+              "sections": [
+                "SLPの分析から配置案へ",
+                "搬送負荷を比較する"
+              ],
+              "status": "増補済み・独立監査待ち"
+            },
+            {
+              "topic": "ops-maintenance",
+              "sections": [
+                "設備費用分岐点と埋没費用",
+                "等価年間費用と設備更新"
+              ],
+              "status": "増補済み・独立監査待ち"
             }
           ]
         },
@@ -3603,7 +3849,17 @@
                 "ops-qc",
                 "ops-06"
               ],
-              "status": "対応候補・本文要照合"
+              "status": "本文・応用例を部分点検／独立監査待ち",
+              "evidence": [
+                {
+                  "topic": "ops-qc",
+                  "sections": [
+                    "抜取検査のOC曲線",
+                    "直交表と交互作用"
+                  ],
+                  "revision": 2
+                }
+              ]
             },
             {
               "id": "o5-6",
@@ -3612,6 +3868,16 @@
                 "ops-design"
               ],
               "status": "対応候補・本文要照合"
+            }
+          ],
+          "detailChecks": [
+            {
+              "topic": "ops-qc",
+              "sections": [
+                "抜取検査のOC曲線",
+                "直交表と交互作用"
+              ],
+              "status": "増補済み・独立監査待ち"
             }
           ]
         },
