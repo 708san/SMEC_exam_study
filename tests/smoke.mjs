@@ -179,4 +179,18 @@ run('state=blank();page="study";selected="ops";render()');
 assert(dom.innerHTML.includes('公式出題項目との対応'));
 assert(dom.innerHTML.includes('商品補充・物流'));
 for(const id of ['ops-04','ops-forecast','ops-pert','ops-qc']){run('selected='+JSON.stringify(id)+';render()');assert(dom.innerHTML.includes('data-diagram="'+id+'"'))}
+const lawSubject=curriculum.subjects.find(s=>s.id==='law');
+assert.equal(lawSubject.officialGroups.length,6);
+assert.equal(lawSubject.topics.length,18);
+assert(lawSubject.topics.every(t=>lessons[t.id]),'missing law lesson');
+const lawQuestions=lawSubject.topics.flatMap(t=>lessons[t.id].questions);
+const lawPositions=[0,1,2,3].map(i=>lawQuestions.filter(q=>q.answer===i).length);
+assert(Math.max(...lawPositions)-Math.min(...lawPositions)<=1,'law answer position bias');
+for(const t of lawSubject.topics){const l=lessons[t.id];assert(l.sections.length>=8,t.id+' explanation depth');assert(l.questions.length>=6,t.id+' exercise depth');assert(l.sources.length>0,t.id+' reference missing');for(const q of l.questions){assert.equal(new Set(q.options).size,q.options.length,q.id+' duplicate options');assert(q.explanations.every(e=>e.trim()),q.id+' missing rationale')}}
+for(const [id,a,b,expected] of [['law-03',60,67,'出席定足数：充足'],['law-03',50,100,'出席定足数：不足'],['law-03',60,67,'特別決議 40個'],['law-03',60,50,'普通決議の必要賛成数 31個'],['law-04',60,50,'増資後の創業者比率：40%'],['law-04',100,0,'増資後の創業者比率：100%'],['law-04',60,100,'増資後の創業者比率：30%']]){
+ assert(run('diagramContent('+JSON.stringify(id)+','+a+','+b+')').includes(expected),id+' '+expected)
+}
+run('state=blank();page="study";selected="law";render()');
+assert(dom.innerHTML.includes('資本市場へのアクセスと手続'));
+for(const id of ['law-03','law-04']){run('selected='+JSON.stringify(id)+';render()');assert(dom.innerHTML.includes('data-diagram="'+id+'"'));assert(dom.innerHTML.includes('参照資料・年度確認'))}
 console.log('PASS: curriculum, lesson links, question integrity, read revisions, review, unique attempts, retention, backup validation and persistence.');
