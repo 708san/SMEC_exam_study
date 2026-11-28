@@ -64,6 +64,18 @@ try{
  await page.locator('button[data-topic="ops-qc"]').last().click();
  await page.locator('[data-diagram="ops-qc"] input[data-param="0"]').fill('50');
  await page.locator('[data-diagram="ops-qc"]').getByText('Cp：1.67｜Cpk：1.67',{exact:true}).waitFor();
+ await page.locator('nav [data-page="study"]').click();
+ await page.locator('[data-subject="law"]').click();
+ await page.locator('button[data-topic="law-03"]').last().click();
+ await page.locator('[data-diagram="law-03"]').getByText('出席・賛成議決権',{exact:true}).waitFor();
+ await page.locator('[data-diagram="law-03"] input[data-param="0"]').fill('50');
+ await page.locator('[data-diagram="law-03"]').getByText(/出席定足数：不足/).waitFor();
+ await page.locator('button[data-subject="law"]').click();
+ await page.locator('button[data-topic="law-04"]').last().click();
+ await page.locator('[data-diagram="law-04"]').getByText('増資後の創業者比率：40%',{exact:true}).waitFor();
+ await page.locator('[data-diagram="law-04"] input[data-param="1"]').fill('100');
+ await page.locator('[data-diagram="law-04"]').getByText('増資後の創業者比率：30%',{exact:true}).waitFor();
+ assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+2),true,'law diagrams mobile overflow');
  await page.locator('nav [data-page="scores"]').click();
  await page.locator('#exam-select').selectOption('2026-mgmt');
  await page.locator('#officialform [name="q0"]').selectOption('ア');
