@@ -193,4 +193,20 @@ for(const [id,a,b,expected] of [['law-03',60,67,'出席定足数：充足'],['la
 run('state=blank();page="study";selected="law";render()');
 assert(dom.innerHTML.includes('資本市場へのアクセスと手続'));
 for(const id of ['law-03','law-04']){run('selected='+JSON.stringify(id)+';render()');assert(dom.innerHTML.includes('data-diagram="'+id+'"'));assert(dom.innerHTML.includes('参照資料・年度確認'))}
+const itSubject=curriculum.subjects.find(s=>s.id==='it');
+assert.equal(itSubject.officialGroups.length,12);
+assert.equal(itSubject.topics.length,16);
+assert(itSubject.topics.every(t=>lessons[t.id]),'missing IT lesson');
+const itQs=itSubject.topics.flatMap(t=>lessons[t.id].questions);
+assert.equal(itQs.length,104);
+const itPositions=[0,1,2,3].map(i=>itQs.filter(q=>q.answer===i).length);
+assert(Math.max(...itPositions)-Math.min(...itPositions)<=1,'IT answer position bias');
+for(const t of itSubject.topics){const l=lessons[t.id];assert(l.sections.length>=8,t.id+' depth');assert(l.questions.length>=6,t.id+' exercises');for(const q of l.questions){assert.equal(new Set(q.options).size,q.options.length,q.id+' duplicate options');assert(q.explanations.every(e=>e.trim()),q.id+' missing rationale')}}
+for(const id of ['it-07','it-08'])assert(lessons[id].sources.length>0,id+' sources');
+for(const [id,a,b,expected] of [['it-performance',90,90,'81%'],['it-performance',90,90,'99%'],['it-performance',0,100,'0%'],['it-performance',0,100,'100%'],['it-project',50,65,'-10万円'],['it-project',50,65,'-15万円'],['it-project',60,60,'0万円'],['it-07',30,10,'75%'],['it-07',30,10,'60%'],['it-07',0,0,'未定義'],['it-07',50,0,'100%']]){
+ assert(run('diagramContent('+JSON.stringify(id)+','+a+','+b+')').includes(expected),id+' '+expected);
+}
+run('state=blank();page="study";selected="it";render()');
+assert(dom.innerHTML.includes('意思決定支援'));
+for(const id of ['it-performance','it-project','it-07']){run('selected='+JSON.stringify(id)+';render()');assert(dom.innerHTML.includes('data-diagram="'+id+'"'))}
 console.log('PASS: curriculum, lesson links, question integrity, read revisions, review, unique attempts, retention, backup validation and persistence.');
