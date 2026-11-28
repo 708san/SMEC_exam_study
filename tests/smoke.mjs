@@ -164,4 +164,19 @@ run('state.exemptions["2027-it"]="confirmed-other"');
 assert.equal(run('approvedExemption(subject("it"))'),true);
 assert.throws(()=>run('validate({...blank(),exemptions:{"2027-fin":"bad"}})'));
 assert.equal(run('Object.keys(validate((()=>{const s=blank();delete s.exemptions;return s})()).exemptions).length'),0);
+const opsSubject=curriculum.subjects.find(s=>s.id==='ops');
+assert.equal(opsSubject.officialGroups.length,11);
+assert(opsSubject.topics.every(t=>lessons[t.id]),'missing operations lesson');
+const opsQuestions=opsSubject.topics.flatMap(t=>lessons[t.id].questions);
+const opsPositions=[0,1,2,3].map(i=>opsQuestions.filter(q=>q.answer===i).length);
+assert(Math.max(...opsPositions)-Math.min(...opsPositions)<=1,'operations answer position bias');
+for(const t of opsSubject.topics){const l=lessons[t.id];assert(l.sections.length>=8,t.id+' explanation depth');assert(l.questions.length>=6,t.id+' exercise depth');for(const q of l.questions){assert.equal(new Set(q.options).size,q.options.length,q.id+' duplicate options');assert(q.explanations.every(e=>e.trim()),q.id+' missing rationale')}}
+for(const id of ['ops-retail-law','ops-logistics','ops-codes','ops-04'])assert(lessons[id].sources.length,id+' sources');
+for(const [id,a,b,expected] of [['ops-04',1200,200,'経済的発注量（EOQ）：200個'],['ops-04',2400,400,'経済的発注量（EOQ）：400個'],['ops-forecast',0,0,'第6期の予測：100個'],['ops-forecast',100,0,'第6期の予測：130個'],['ops-pert',4,2,'最短工期：12日'],['ops-pert',4,4,'A–B–D と A–C–D'],['ops-pert',4,7,'最短工期：15日'],['ops-qc',54,2,'Cp：1.67｜Cpk：1'],['ops-qc',50,2,'Cp：1.67｜Cpk：1.67']]){
+ assert(run('diagramContent('+JSON.stringify(id)+','+a+','+b+')').includes(expected),id+' '+expected);
+}
+run('state=blank();page="study";selected="ops";render()');
+assert(dom.innerHTML.includes('公式出題項目との対応'));
+assert(dom.innerHTML.includes('商品補充・物流'));
+for(const id of ['ops-04','ops-forecast','ops-pert','ops-qc']){run('selected='+JSON.stringify(id)+';render()');assert(dom.innerHTML.includes('data-diagram="'+id+'"'))}
 console.log('PASS: curriculum, lesson links, question integrity, read revisions, review, unique attempts, retention, backup validation and persistence.');
